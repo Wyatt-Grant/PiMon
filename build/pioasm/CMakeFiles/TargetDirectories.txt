@@ -1,0 +1,3 @@
+/Users/wyatt/Dev/PiMon/build/pioasm/CMakeFiles/pioasm.dir
+/Users/wyatt/Dev/PiMon/build/pioasm/CMakeFiles/edit_cache.dir
+/Users/wyatt/Dev/PiMon/build/pioasm/CMakeFiles/rebuild_cache.dir

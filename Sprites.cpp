@@ -1,0 +1,8 @@
+// #include "sprites/Logo.cpp"
+#include "sprites/npcs/1.cpp"
+#include "sprites/npcs/2.cpp"
+#include "sprites/npcs/3.cpp"
+#include "sprites/npcs/4.cpp"
+#include "sprites/npcs/5.cpp"
+#include "sprites/npcs/6.cpp"
+#include "sprites/npcs/7.cpp"
