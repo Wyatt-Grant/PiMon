@@ -12,6 +12,13 @@ set(PROJECT_SOURCES
     engine/Message.cpp
     engine/Battle.cpp
     engine/TitleScreen.cpp
+    engine/menu/Menu.cpp
+    engine/menu/Dex.cpp
+    engine/menu/TownMap.cpp
+    engine/menu/Bag.cpp
+    engine/menu/Party.cpp
+    engine/menu/Settings.cpp
+    engine/menu/Stats.cpp
     globals.cpp
 )
 

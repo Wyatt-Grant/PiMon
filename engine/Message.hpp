@@ -18,17 +18,15 @@ class Message {
         std::vector<Text>::iterator msgPtr;
 
         //animation
-        bool waitingForOpenAnimation;
-        bool waitingForCloseAnimation;
         int32_t animX;
         int32_t animY;
         int32_t animW;
         int32_t animH;
-        
-        void noCornerBox(int32_t x, int32_t y, int32_t w, int32_t h);
-        void drawWindow(uint32_t x, uint32_t y, uint32_t w, uint32_t h);
 
     public:
+        bool waitingForOpenAnimation;
+        bool waitingForCloseAnimation;
+
         Message();
         void showMessages(std::vector<Text> messages);
         void showMessage(std::string msg);

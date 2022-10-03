@@ -1699,6 +1699,174 @@ engine/TitleScreen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.s
 .PHONY : engine/TitleScreen.cpp.s
 
+engine/menu/Bag.obj: engine/menu/Bag.cpp.obj
+.PHONY : engine/menu/Bag.obj
+
+# target to build an object file
+engine/menu/Bag.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj
+.PHONY : engine/menu/Bag.cpp.obj
+
+engine/menu/Bag.i: engine/menu/Bag.cpp.i
+.PHONY : engine/menu/Bag.i
+
+# target to preprocess a source file
+engine/menu/Bag.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.i
+.PHONY : engine/menu/Bag.cpp.i
+
+engine/menu/Bag.s: engine/menu/Bag.cpp.s
+.PHONY : engine/menu/Bag.s
+
+# target to generate assembly for a file
+engine/menu/Bag.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.s
+.PHONY : engine/menu/Bag.cpp.s
+
+engine/menu/Dex.obj: engine/menu/Dex.cpp.obj
+.PHONY : engine/menu/Dex.obj
+
+# target to build an object file
+engine/menu/Dex.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj
+.PHONY : engine/menu/Dex.cpp.obj
+
+engine/menu/Dex.i: engine/menu/Dex.cpp.i
+.PHONY : engine/menu/Dex.i
+
+# target to preprocess a source file
+engine/menu/Dex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.i
+.PHONY : engine/menu/Dex.cpp.i
+
+engine/menu/Dex.s: engine/menu/Dex.cpp.s
+.PHONY : engine/menu/Dex.s
+
+# target to generate assembly for a file
+engine/menu/Dex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.s
+.PHONY : engine/menu/Dex.cpp.s
+
+engine/menu/Menu.obj: engine/menu/Menu.cpp.obj
+.PHONY : engine/menu/Menu.obj
+
+# target to build an object file
+engine/menu/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj
+.PHONY : engine/menu/Menu.cpp.obj
+
+engine/menu/Menu.i: engine/menu/Menu.cpp.i
+.PHONY : engine/menu/Menu.i
+
+# target to preprocess a source file
+engine/menu/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.i
+.PHONY : engine/menu/Menu.cpp.i
+
+engine/menu/Menu.s: engine/menu/Menu.cpp.s
+.PHONY : engine/menu/Menu.s
+
+# target to generate assembly for a file
+engine/menu/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.s
+.PHONY : engine/menu/Menu.cpp.s
+
+engine/menu/Party.obj: engine/menu/Party.cpp.obj
+.PHONY : engine/menu/Party.obj
+
+# target to build an object file
+engine/menu/Party.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj
+.PHONY : engine/menu/Party.cpp.obj
+
+engine/menu/Party.i: engine/menu/Party.cpp.i
+.PHONY : engine/menu/Party.i
+
+# target to preprocess a source file
+engine/menu/Party.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Party.cpp.i
+.PHONY : engine/menu/Party.cpp.i
+
+engine/menu/Party.s: engine/menu/Party.cpp.s
+.PHONY : engine/menu/Party.s
+
+# target to generate assembly for a file
+engine/menu/Party.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Party.cpp.s
+.PHONY : engine/menu/Party.cpp.s
+
+engine/menu/Settings.obj: engine/menu/Settings.cpp.obj
+.PHONY : engine/menu/Settings.obj
+
+# target to build an object file
+engine/menu/Settings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj
+.PHONY : engine/menu/Settings.cpp.obj
+
+engine/menu/Settings.i: engine/menu/Settings.cpp.i
+.PHONY : engine/menu/Settings.i
+
+# target to preprocess a source file
+engine/menu/Settings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.i
+.PHONY : engine/menu/Settings.cpp.i
+
+engine/menu/Settings.s: engine/menu/Settings.cpp.s
+.PHONY : engine/menu/Settings.s
+
+# target to generate assembly for a file
+engine/menu/Settings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.s
+.PHONY : engine/menu/Settings.cpp.s
+
+engine/menu/Stats.obj: engine/menu/Stats.cpp.obj
+.PHONY : engine/menu/Stats.obj
+
+# target to build an object file
+engine/menu/Stats.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj
+.PHONY : engine/menu/Stats.cpp.obj
+
+engine/menu/Stats.i: engine/menu/Stats.cpp.i
+.PHONY : engine/menu/Stats.i
+
+# target to preprocess a source file
+engine/menu/Stats.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.i
+.PHONY : engine/menu/Stats.cpp.i
+
+engine/menu/Stats.s: engine/menu/Stats.cpp.s
+.PHONY : engine/menu/Stats.s
+
+# target to generate assembly for a file
+engine/menu/Stats.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.s
+.PHONY : engine/menu/Stats.cpp.s
+
+engine/menu/TownMap.obj: engine/menu/TownMap.cpp.obj
+.PHONY : engine/menu/TownMap.obj
+
+# target to build an object file
+engine/menu/TownMap.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj
+.PHONY : engine/menu/TownMap.cpp.obj
+
+engine/menu/TownMap.i: engine/menu/TownMap.cpp.i
+.PHONY : engine/menu/TownMap.i
+
+# target to preprocess a source file
+engine/menu/TownMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.i
+.PHONY : engine/menu/TownMap.cpp.i
+
+engine/menu/TownMap.s: engine/menu/TownMap.cpp.s
+.PHONY : engine/menu/TownMap.s
+
+# target to generate assembly for a file
+engine/menu/TownMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.s
+.PHONY : engine/menu/TownMap.cpp.s
+
 globals.obj: globals.cpp.obj
 .PHONY : globals.obj
 
@@ -1945,6 +2113,27 @@ help:
 	@echo "... engine/TitleScreen.obj"
 	@echo "... engine/TitleScreen.i"
 	@echo "... engine/TitleScreen.s"
+	@echo "... engine/menu/Bag.obj"
+	@echo "... engine/menu/Bag.i"
+	@echo "... engine/menu/Bag.s"
+	@echo "... engine/menu/Dex.obj"
+	@echo "... engine/menu/Dex.i"
+	@echo "... engine/menu/Dex.s"
+	@echo "... engine/menu/Menu.obj"
+	@echo "... engine/menu/Menu.i"
+	@echo "... engine/menu/Menu.s"
+	@echo "... engine/menu/Party.obj"
+	@echo "... engine/menu/Party.i"
+	@echo "... engine/menu/Party.s"
+	@echo "... engine/menu/Settings.obj"
+	@echo "... engine/menu/Settings.i"
+	@echo "... engine/menu/Settings.s"
+	@echo "... engine/menu/Stats.obj"
+	@echo "... engine/menu/Stats.i"
+	@echo "... engine/menu/Stats.s"
+	@echo "... engine/menu/TownMap.obj"
+	@echo "... engine/menu/TownMap.i"
+	@echo "... engine/menu/TownMap.s"
 	@echo "... globals.obj"
 	@echo "... globals.i"
 	@echo "... globals.s"

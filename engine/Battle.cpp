@@ -102,21 +102,6 @@ void Battle::drawEnemyTrainerBack(int32_t _x, int32_t _y) {
     }
 }
 
-void Battle::noCornerBox(int32_t x, int32_t y, int32_t w, int32_t h) {
-    hline(x+1, y,   w-2);
-    hline(x+1, y+h-1, w-2);
-    vline(x, y+1,   h-2);
-    vline(x+w-1, y+1, h-2);
-}
-
-void Battle::drawWindow(uint32_t x, uint32_t y, uint32_t w, uint32_t h) {
-    pen(15,15,15);
-    noCornerBox(x,y,w,h);
-    frect(x+1,y+1,w-2,h-2);
-    pen(3,3,3);
-    noCornerBox(x+1,y+1,w-2,h-2);
-}
-
 void Battle::draw(uint32_t tick) {
     pen(15,15,15);
     clear();

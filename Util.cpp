@@ -88,7 +88,7 @@ namespace picosystem {
         wholenote = (60 * 1000L / bpm) * 4;
 
         while(*p) {
-            if (changeSong) {
+            if (changeSong || menuOpen) {
                 changeSong = false;
                 break;
             }
@@ -133,12 +133,12 @@ namespace picosystem {
             p++;
 
             if(*p == '#') {
-            note++;
-            p++;
+                note++;
+                p++;
             }
             if(*p == '.') {
-            duration += duration/2;
-            p++;
+                duration += duration/2;
+                p++;
             }
             if (isdigit(*p)) {
                 scale = *p - '0';
@@ -151,7 +151,7 @@ namespace picosystem {
             }
 
             if (note) {
-                play(piano, notes[(scale - 4) * 12 + note], duration * 0.9, 100);
+                play(piano, notes[(scale - 4) * 12 + note], duration * 0.9, volume);
                 sleep(duration);
             } else {
                 sleep(duration);

@@ -7,7 +7,6 @@
 #include "maps/town1/outside/town1_outside_colliders.cpp"
 
 Player::Player(int32_t x, int32_t y) {
-    playerAvatar = 1;
     position.x = x;
     position.y = y;
     offsetTileX = 0;
@@ -163,7 +162,7 @@ void Player::update(uint32_t tick, int32_t mapNumber, std::vector<Npc*> npcs, Me
     canMoveLeft = true;
     canMoveRight = true;
 
-    if (!waiting) {
+    if (!waiting && !menuOpen) {
         switch(mapNumber) {
             case 1:
                 updateMovementAvailability(town1_outside_colliders, npcs);

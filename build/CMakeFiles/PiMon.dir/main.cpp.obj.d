@@ -285,4 +285,11 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc \
  /Users/wyatt/Dev/PiMon/engine/Battle.hpp \
- /Users/wyatt/Dev/PiMon/engine/TitleScreen.hpp
+ /Users/wyatt/Dev/PiMon/engine/TitleScreen.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/Menu.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/Bag.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/Dex.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/TownMap.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/Party.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/Settings.hpp \
+ /Users/wyatt/Dev/PiMon/engine/menu/Stats.hpp

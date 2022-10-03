@@ -13,6 +13,7 @@
 #include "engine/Message.hpp"
 #include "engine/Battle.hpp"
 #include "engine/TitleScreen.hpp"
+#include "engine/menu/Menu.hpp"
 
 using namespace picosystem;
 using namespace std::placeholders;
@@ -24,13 +25,18 @@ std::vector<Npc*> npcs;
 Message *message;
 Battle *battle;
 TitleScreen *titleScreen;
+Menu *menu;
 
 void init() {
+    blend(MASK);
+    backlight(bright);
+
     player = new Player(52, 52);
     map = new Map();
     message = new Message();
     battle = new Battle();
     titleScreen = new TitleScreen();
+    menu = new Menu();
 
     npcs.push_back(new Npc(84, 52, npc_1_overworld_buffer, npc_1_front_buffer, down));
     npcs.at(0)->addMessage({ "Hey PLAYER!", 0 });
@@ -44,6 +50,8 @@ void init() {
 }
 
 void update(uint32_t tick) {
+    forceDrawMap = false;
+
     switch (MainScene) {
         case TITLE_SCREEN:
             titleScreen->update(tick);
@@ -51,9 +59,12 @@ void update(uint32_t tick) {
         case NEWGAME_INTRO:
             break;
         case OVERWORLD:
-            player->update(tick, 1, npcs, message);
-            map->update(tick);
-            for (auto &npc : npcs) npc->update(tick, 1);
+            if (!menuOpen) {
+                player->update(tick, 1, npcs, message);
+                map->update(tick);
+                for (auto &npc : npcs) npc->update(tick, 1);
+            }
+            menu->update(tick, message);
             message->update(tick);
             break;
         case BATTLE:
@@ -71,10 +82,13 @@ void draw(uint32_t tick) {
         case NEWGAME_INTRO:
             break;
         case OVERWORLD:
-            map->draw(tick, 1);
-            player->draw(tick);
-            map->drawAbove(tick, 1);
-            for (auto &npc : npcs) npc->draw(tick);
+            if (!menuOpen || forceDrawMap) {
+                map->draw(tick, 1);
+                player->draw(tick);
+                map->drawAbove(tick, 1);
+                for (auto &npc : npcs) npc->draw(tick);
+            }
+            menu->draw(tick);
             message->draw(tick);
             break;
         case BATTLE:

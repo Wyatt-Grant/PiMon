@@ -72,11 +72,13 @@ void Message::update(uint32_t tick) {
         }
     } else if (waiting) {
         if (waitingForCloseAnimation) {
+            forceDrawMap = true;
             if (animY < 120 && MainScene != BATTLE) {
                 animY += 4;
             } else {
                 waiting = false;
                 waitingForOpenAnimation = false;
+                waitingForCloseAnimation = false;
                 msgPtr--;
                 msgPtr->callback();
             }
@@ -90,36 +92,23 @@ void Message::update(uint32_t tick) {
     }
 }
 
-void Message::noCornerBox(int32_t x, int32_t y, int32_t w, int32_t h) {
-    hline(x+1, y,   w-2);
-    hline(x+1, y+h-1, w-2);
-    vline(x, y+1,   h-2);
-    vline(x+w-1, y+1, h-2);
-}
-
-void Message::drawWindow(uint32_t x, uint32_t y, uint32_t w, uint32_t h) {
-    pen(15,15,15);
-    noCornerBox(x,y,w,h);
-    frect(x+1,y+1,w-2,h-2);
-    pen(3,3,3);
-    noCornerBox(x+1,y+1,w-2,h-2);
-}
-
 void Message::draw(uint32_t tick) {
     if (waiting) {
         if (waitingForCloseAnimation || waitingForOpenAnimation) {
             drawWindow(animX, animY, animW, animH);
         } else {
-            drawWindow(0, 88, 120, 32);
-            pen(0, 0, 0);
-            text(msgPtr->text.substr(0, messageOffset), 4, 92, 108);
+            if (msgPtr != messages.end()) {
+                drawWindow(0, 88, 120, 32);
+                pen(themeR,themeG,themeB);
+                text(msgPtr->text.substr(0, messageOffset), 4, 92, 108);
 
-            if (messageOffset == msgPtr->text.length()) {
-                uint32_t cursorOffset = (time() % 600 < 300) ? 111 : 110;
-                hline(106, cursorOffset, 8);
-                hline(107, cursorOffset+1, 6);
-                hline(108, cursorOffset+2, 4);
-                hline(109, cursorOffset+3, 2);
+                if (messageOffset == msgPtr->text.length()) {
+                    uint32_t cursorOffset = (time() % 600 < 300) ? 111 : 110;
+                    hline(106, cursorOffset, 8);
+                    hline(107, cursorOffset+1, 6);
+                    hline(108, cursorOffset+2, 4);
+                    hline(109, cursorOffset+3, 2);
+                }
             }
         }
     }
