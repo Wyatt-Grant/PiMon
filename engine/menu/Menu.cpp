@@ -16,12 +16,12 @@ Menu::Menu() {
 }
 
 void Menu::updateBase(uint32_t tick, Message *message) {
-    if (pressed(UP)) {
+    if (pressed(UP) && !waiting) {
         if (menuIndex > 0) {
             menuIndex -= 1;
         }
     }
-    if (pressed(DOWN)) {
+    if (pressed(DOWN) && !waiting) {
         if (menuIndex < 7) {
             menuIndex += 1;
         }
@@ -55,9 +55,9 @@ void Menu::updateBase(uint32_t tick, Message *message) {
                 break;
             case 5:
                 message->showMessage("Saving not done!");
-                menuOpen = false;
-                waitForOpenAnimation = false;
-                waitForCloseAnimation = true;
+                // menuOpen = false;
+                // waitForOpenAnimation = false;
+                // waitForCloseAnimation = true;
                 break;
             case 6:
                 settings->waitForOpenAnimation = true;
@@ -149,10 +149,10 @@ void Menu::update(uint32_t tick, Message *message) {
                 if (townMap->waitForCloseAnimation || townMap->waitForOpenAnimation) townMap->update(tick);
                 if (dex->waitForCloseAnimation || dex->waitForOpenAnimation) dex->update(tick);
                 if (party->waitForCloseAnimation || party->waitForOpenAnimation) party->update(tick);
-                if (bag->waitForCloseAnimation || bag->waitForOpenAnimation) bag->update(tick);
+                if (bag->waitForCloseAnimation || bag->waitForOpenAnimation) bag->update(tick, message);
                 break;
             case MENU_BAG:
-                bag->update(tick);
+                bag->update(tick, message);
                 break;
             case MENU_STATS:
                 stats->update(tick);

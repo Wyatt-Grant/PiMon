@@ -3,6 +3,8 @@
 enum Direction { up, down, left, right };
 enum SCENE {
     TITLE_SCREEN,
+    LOAD_GAME,
+    NEW_GAME_INTRO,
     NEWGAME_INTRO,
     OVERWORLD,
     BATTLE,

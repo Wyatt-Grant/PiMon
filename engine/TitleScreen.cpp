@@ -80,8 +80,7 @@ void TitleScreen::drawLogo(int32_t _x, int32_t _y) {
 
 void TitleScreen::update(uint32_t tick) {
     if (time() > 3000 && (pressed(A) || pressed(B) || pressed(X) || pressed(Y))) {
-        MainScene = OVERWORLD;
-        changeSong = true;
+        MainScene = LOAD_GAME;
     }
 }
 

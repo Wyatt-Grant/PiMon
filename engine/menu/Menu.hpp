@@ -33,13 +33,6 @@ class Menu {
         SCENE scene;
         int8_t menuIndex;
 
-        Bag *bag;
-        Dex *dex;
-        TownMap *townMap;
-        Party *party;
-        Settings *settings;
-        Stats *stats;
-
         //anim
         int8_t animX;
         bool waitForOpenAnimation;
@@ -50,6 +43,13 @@ class Menu {
         void handleOpenClose();
 
     public:
+        Bag *bag;
+        Dex *dex;
+        TownMap *townMap;
+        Party *party;
+        Settings *settings;
+        Stats *stats;
+        
         Menu();
         void draw(uint32_t tick);
         void update(uint32_t tick, Message *message);

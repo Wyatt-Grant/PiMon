@@ -156,6 +156,7 @@ namespace picosystem {
             if (time() > 1500) {
                 switch (MainScene) {
                     case TITLE_SCREEN:
+                    case LOAD_GAME:
                         play_rtttl(title_song);
                         break;
                     case NEWGAME_INTRO:

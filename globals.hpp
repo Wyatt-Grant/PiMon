@@ -62,6 +62,10 @@ extern buffer_t *npc_4_front_buffer;
 extern buffer_t *npc_5_front_buffer;
 extern buffer_t *npc_6_front_buffer;
 extern buffer_t *npc_7_front_buffer;
+extern buffer_t *npc_8_front_buffer;
+extern buffer_t *npc_9_front_buffer;
+extern buffer_t *npc_10_front_buffer;
+extern buffer_t *npc_11_front_buffer;
 
 extern buffer_t *npc_1_overworld_buffer;
 extern buffer_t *npc_2_overworld_buffer;
@@ -70,6 +74,10 @@ extern buffer_t *npc_4_overworld_buffer;
 extern buffer_t *npc_5_overworld_buffer;
 extern buffer_t *npc_6_overworld_buffer;
 extern buffer_t *npc_7_overworld_buffer;
+extern buffer_t *npc_8_overworld_buffer;
+extern buffer_t *npc_9_overworld_buffer;
+extern buffer_t *npc_10_overworld_buffer;
+extern buffer_t *npc_11_overworld_buffer;
 
 // TitleScreen
 extern buffer_t *logo_buffer;

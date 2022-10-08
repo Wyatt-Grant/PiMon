@@ -6,6 +6,7 @@
 #include "types.hpp"
 #include "globals.hpp"
 #include "engine/Message.hpp"
+#include "engine/menu/Menu.hpp"
 
 using namespace picosystem;
 
@@ -26,6 +27,8 @@ class Battle {
         bool playerIsFirst;
         int32_t enemyMoveIndex;
         int32_t damage;
+        bool waitingForPartySwitch;
+        int32_t switchToTarget;
 
         enum SCENE {
             BATTLE_INTRO_TEXT,
@@ -46,6 +49,8 @@ class Battle {
             BATTLE_WAIT_FOR_ENEMY_DAMAGE,
             BATTLE_WAIT_FOR_PLAYER_SWITCH,
             BATTLE_WAIT_FOR_ENEMY_SWITCH,
+
+            BATTLE_OPEN_PARTY,
 
             BATTLE_RUN_AWAY,
             BATTLE_WIN,
@@ -68,7 +73,7 @@ class Battle {
         void drawEnemyPartySprite(int32_t _x, int32_t _y);
         void drawActions();
         void drawMoves();
-        void handlePlayerSelectActionInput();
+        void handlePlayerSelectActionInput(Menu *menu);
         void handlePlayerSelectMoveInput();
         void drawMainView();
         int32_t calcDamage(trainerPimon attacker, pimon defender, move usedMove);
@@ -77,6 +82,6 @@ class Battle {
         
     public:
         Battle();
-        void draw(uint32_t tick);
-        void update(uint32_t tick, Message *message);
+        void draw(uint32_t tick, Menu *menu);
+        void update(uint32_t tick, Message *message, Menu *menu);
 };

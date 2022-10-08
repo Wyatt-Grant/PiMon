@@ -31,7 +31,8 @@ void Map::drawMap(const int16_t below[][80], const int16_t above[][80]) {
             if (!menuOpen) {
                 drawMapTile(below, x, y);
                 drawMapTile(above, x, y);
-            } else if ((x > 8 && y < 13 && y > 9) || (x > 8 && x < 10)) {
+            // } else if ((x > 8 && y < 13 && y > 9) || (x > 8 && x < 10)) {
+            } else if ((y > 11) || (x > 8 && x < 10) || (x > 9 && y > 9 && y < 12)) { // only draw what you need to, when menus open this makes anaimtions smoother
                 drawMapTile(below, x, y);
                 drawMapTile(above, x, y);
             }

@@ -55,6 +55,10 @@
 #include "sprites/npcs/5.cpp"
 #include "sprites/npcs/6.cpp"
 #include "sprites/npcs/7.cpp"
+#include "sprites/npcs/8.cpp"
+#include "sprites/npcs/9.cpp"
+#include "sprites/npcs/10.cpp"
+#include "sprites/npcs/11.cpp"
 
 #include "sprites/Logo.cpp"
 

@@ -5,6 +5,8 @@
 
 #include "types.hpp"
 #include "globals.hpp"
+#include "engine/menu/Party.hpp"
+#include "engine/Message.hpp"
 
 using namespace picosystem;
 
@@ -13,8 +15,10 @@ class Bag {
         int8_t menuIndex;
         int8_t counter;
         int8_t selected;
+        bool partyOpen;
 
     public:
+        Party *partyMenu;
         bool closing;
         bool pressedBack;
 
@@ -25,5 +29,5 @@ class Bag {
 
         Bag();
         void draw(uint32_t tick);
-        void update(uint32_t tick);
+        void update(uint32_t tick, Message *message);
 };

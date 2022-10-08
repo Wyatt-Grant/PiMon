@@ -8,50 +8,88 @@ Bag::Bag() {
     pressedBack = false;
     menuIndex = 0;
     counter = 0;
+    selected = 0;
+    partyMenu = new Party();
+    partyOpen = false;
 }
 
-void Bag::update(uint32_t tick) {
+void Bag::update(uint32_t tick, Message *message) {
     closing = false;
-    if (pressed(B)) {
-        waitForOpenAnimation = false;
-        waitForCloseAnimation = true;
-        pressedBack = true;
-    }
-
-    if (waitForOpenAnimation && animX > 64) {
-        animX -= 8;
-        if (animX < 64) animX = 64; 
-    } else if (waitForCloseAnimation && animX < 120) {
-        forceDrawMap = true;
-        animX += 8;
-        if (animX > 120) animX = 120; 
-        if (animX == 120) {
-            waitForCloseAnimation = false;
-            menuIndex = 0;
+    if (pressed(A) && animX == 64 && partyMenu->animX != 64 && !waiting) { // open bag, but dont re-open
+        if (selected != 0 && selected != 1) { // if not potion or elixer
+            message->showMessage("This can only be\nused in a battle...");
+        } else {
+            partyMenu->waitForOpenAnimation = true;
+            partyMenu->animX = 120;
+            partyOpen = true;
         }
     }
 
-    if (pressedBack) {
-        closing = true;
-        pressedBack = false;
+    if (pressed(A) && animX == 64 && partyMenu->animX == 64) { // choose party member to use item on
+        if (selected == 0) { //potion
+            party.at(partyMenu->menuIndex).hp += 20;
+            potion -= 1;
+        }
+        if (selected == 1) { //elixer
+            party.at(partyMenu->menuIndex).hp = getMaxHp(party.at(partyMenu->menuIndex).pimon_id, xpToLvl(party.at(partyMenu->menuIndex).xp));
+            elixer -= 1;
+        }
+        partyOpen = false;
+        partyMenu->waitForOpenAnimation = false;
+        partyMenu->waitForCloseAnimation = true;
+        partyMenu->pressedBack = true;
     }
 
-    counter = 0;
-    int8_t counts[] = {potion, elixer, emerald, diamond, ruby, coffee, cure, icePack};
-    for (int8_t i = 0; i < 8; i++) {
-        if (counts[i] > 0) {
-            counter += 1;
+    if (partyOpen || partyMenu->waitForCloseAnimation) {
+        partyMenu->update(tick);
+        if (partyOpen && pressed(B)) {
+            partyOpen = false;
+            return;
         }
     }
 
-    if (pressed(UP)) {
-        if (menuIndex > 0) {
-            menuIndex -= 1;
+    if (!partyOpen) {
+        if (pressed(B)) {
+            waitForOpenAnimation = false;
+            waitForCloseAnimation = true;
+            pressedBack = true;
         }
-    }
-    if (pressed(DOWN)) {
-        if (menuIndex < counter-1) {
-            menuIndex += 1;
+
+        if (waitForOpenAnimation && animX > 64) {
+            animX -= 8;
+            if (animX < 64) animX = 64; 
+        } else if (waitForCloseAnimation && animX < 120) {
+            forceDrawMap = true;
+            animX += 8;
+            if (animX > 120) animX = 120; 
+            if (animX == 120) {
+                waitForCloseAnimation = false;
+                menuIndex = 0;
+            }
+        }
+
+        if (pressedBack) {
+            closing = true;
+            pressedBack = false;
+        }
+
+        counter = 0;
+        int8_t counts[] = {potion, elixer, emerald, diamond, ruby, coffee, cure, icePack};
+        for (int8_t i = 0; i < 8; i++) {
+            if (counts[i] > 0) {
+                counter += 1;
+            }
+        }
+
+        if (pressed(UP) && !waiting) {
+            if (menuIndex > 0) {
+                menuIndex -= 1;
+            }
+        }
+        if (pressed(DOWN) && !waiting) {
+            if (menuIndex < counter-1) {
+                menuIndex += 1;
+            }
         }
     }
 }
@@ -123,4 +161,7 @@ void Bag::draw(uint32_t tick) {
             text(str((int32_t) icePack), animX + 48, 4 + (9 * 8));
             break;
     }
+
+    if (partyOpen) partyMenu->draw(tick);
+    if (partyMenu->waitForCloseAnimation || partyMenu->waitForOpenAnimation) partyMenu->draw(tick);
 }

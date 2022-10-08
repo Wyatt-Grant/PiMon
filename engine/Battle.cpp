@@ -14,6 +14,8 @@ Battle::Battle() {
     enemyPartyIndex = 0;
     enemyMoveIndex = 0;
     animSwitched = false;
+    waitingForPartySwitch = false;
+    switchToTarget = 0;
 }
 
 void Battle::setNextPartyPimonIndex() {
@@ -126,7 +128,7 @@ void Battle::slideOutPlayerAndEnemy() {
     slideOutEnemy();
 }
 
-void Battle::handlePlayerSelectActionInput() {
+void Battle::handlePlayerSelectActionInput(Menu *menu) {
     if (pressed(UP) && actionIndex > 1) {
         actionIndex -= 2;
     }
@@ -148,12 +150,14 @@ void Battle::handlePlayerSelectActionInput() {
             case 1:
                 break;
             case 2:
+                scene = BATTLE_OPEN_PARTY;
+                menu->party->waitForOpenAnimation = true;
+                menu->party->animX = 120;
                 break;
             case 3:
                 scene = BATTLE_RUN_AWAY;
                 break;
         }
-        actionIndex = 0;
     }
 }
 
@@ -182,16 +186,16 @@ void Battle::handlePlayerSelectMoveInput() {
     }
 
     if (pressed(A)) {
-        switch(actionIndex) {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-        }
+        // switch(actionIndex) {
+        //     case 0:
+        //         break;
+        //     case 1:
+        //         break;
+        //     case 2:
+        //         break;
+        //     case 3:
+        //         break;
+        // }
         scene = BATTLE_DETERMINE_ORDER;
     }
 
@@ -200,7 +204,7 @@ void Battle::handlePlayerSelectMoveInput() {
     }
 }
 
-void Battle::update(uint32_t tick, Message *message) {
+void Battle::update(uint32_t tick, Message *message, Menu *menu) {
     std::string msg = "";
 
     // slide animations don't respect the waiting flag
@@ -224,6 +228,7 @@ void Battle::update(uint32_t tick, Message *message) {
             } else {
                 slideOutPlayer();
             }
+            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->update(tick);
             break;
         case BATTLE_WAIT_FOR_ENEMY_SWITCH:
             if (animSwitched) {
@@ -231,6 +236,38 @@ void Battle::update(uint32_t tick, Message *message) {
             } else {
                 slideOutEnemy();
             }
+            break;
+        case BATTLE_OPEN_PARTY:
+            if (pressed(B)) {
+                scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+            }
+            if (pressed(A)) {
+                if (party.at(menu->party->menuIndex).hp > 0 && menu->party->menuIndex != playerPartyIndex) {
+                    menu->party->close();
+                    switchToTarget = menu->party->menuIndex;
+                    message->showMessage("go some guy!");
+                    waitingForPartySwitch = true;
+                }
+            }
+
+            if (waitingForPartySwitch) {
+                if (animSwitched) {
+                    slideInPlayer();
+                } else {
+                    slideOutPlayer();
+                }
+                if (animPlayer == -56) {
+                    playerPartyIndex = switchToTarget;
+                    animSwitched = true;
+                }
+                if (animSwitched && animPlayer == 0) {
+                    scene = BATTLE_WAIT_FOR_ENEMY_MOVE;
+                }
+            }
+            menu->party->update(tick);
+            break;
+        default:
+            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->update(tick);
             break;
     }
     
@@ -262,7 +299,7 @@ void Battle::update(uint32_t tick, Message *message) {
                 animPlayer = 0;
                 animEnemy = 64;
                 animSwitched =  false;
-                handlePlayerSelectActionInput();
+                handlePlayerSelectActionInput(menu);
                 break;
             case BATTLE_WAIT_FOR_PLAYER_MOVE_INPUT:
                 handlePlayerSelectMoveInput();
@@ -283,7 +320,6 @@ void Battle::update(uint32_t tick, Message *message) {
             case BATTLE_WAIT_FOR_PLAYER_MOVE:
                 msg = getPimonData(party, playerPartyIndex).name;
                 damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
-                // enemyParty.at(enemyPartyIndex).hp -= damage;
                 message->showMessage(msg.append(" used\n").append(getPimonData(party, playerPartyIndex).moves.at(actionIndex).name).append("!"));
 
                 scene = BATTLE_WAIT_FOR_PLAYER_DAMAGE;
@@ -292,10 +328,10 @@ void Battle::update(uint32_t tick, Message *message) {
                 msg = getPimonData(enemyParty, enemyPartyIndex).name;
                 enemyMoveIndex = rand() % ((xpToLvl(enemyParty.at(0).xp)/5) + 1);
                 damage = calcDamage(enemyParty.at(enemyPartyIndex), getPimonData(party, playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex));
-                // party.at(playerPartyIndex).hp -= damage;
                 message->showMessage(msg.append(" used\n").append(getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).name).append("!"));
 
                 scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
+                actionIndex = 0;
                 break;
             case BATTLE_WAIT_FOR_PLAYER_DAMAGE:
                 if (damage == 0) {
@@ -307,13 +343,16 @@ void Battle::update(uint32_t tick, Message *message) {
                         msg = getPimonData(enemyParty, enemyPartyIndex).name;
                         message->showMessage(msg.append("\nhas fainted!"));
                         scene = BATTLE_WAIT_FOR_ENEMY_SWITCH;
-                        // setNextEnemyPartyPimonIndex();
                     }
                 }
                 break;
             case BATTLE_WAIT_FOR_ENEMY_DAMAGE:
                 if (damage == 0) {
                     scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
+                    if (waitingForPartySwitch) {
+                        scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                        waitingForPartySwitch = false;
+                    }
                 } else {
                     party.at(playerPartyIndex).hp--;
                     damage--;
@@ -321,7 +360,6 @@ void Battle::update(uint32_t tick, Message *message) {
                         msg = getPimonData(party, playerPartyIndex).name;
                         message->showMessage(msg.append("\nhas fainted!"));
                         scene = BATTLE_WAIT_FOR_PLAYER_SWITCH;
-                        // setNextPartyPimonIndex();
                     }
                 }
                 break;
@@ -422,19 +460,21 @@ void Battle::drawActions() {
     text("Bag", 70, 94);
     text("Run", 70, 106);
 
-    int cursorX = (actionIndex == 0 || actionIndex == 2) ? 4 : 64;
-    int cursorY = (actionIndex == 0 || actionIndex == 1) ? 94 : 106;
-    vline(cursorX, cursorY, 8);
-    vline(cursorX+1, cursorY+1, 6);
-    vline(cursorX+2, cursorY+2, 4);
-    vline(cursorX+3, cursorY+3, 2);
+    if (scene != BATTLE_OPEN_PARTY) {
+        int cursorX = (actionIndex == 0 || actionIndex == 2) ? 4 : 64;
+        int cursorY = (actionIndex == 0 || actionIndex == 1) ? 94 : 106;
+        vline(cursorX, cursorY, 8);
+        vline(cursorX+1, cursorY+1, 6);
+        vline(cursorX+2, cursorY+2, 4);
+        vline(cursorX+3, cursorY+3, 2);
+    }
 }
 
 void Battle::drawMoves() {
     int32_t lvl = xpToLvl(party.at(playerPartyIndex).xp);
     if (lvl > 0)  text(getPimonData(party, playerPartyIndex).moves.at(0).name, 10, 94);
-    if (lvl > 4)  text(getPimonData(party, playerPartyIndex).moves.at(2).name, 70, 94);
-    if (lvl > 9)  text(getPimonData(party, playerPartyIndex).moves.at(1).name, 10, 106);
+    if (lvl > 4)  text(getPimonData(party, playerPartyIndex).moves.at(1).name, 70, 94);
+    if (lvl > 9)  text(getPimonData(party, playerPartyIndex).moves.at(2).name, 10, 106);
     if (lvl > 14) text(getPimonData(party, playerPartyIndex).moves.at(3).name, 70, 106);
 
     int cursorX = (actionIndex == 0 || actionIndex == 2) ? 4 : 64;
@@ -470,13 +510,12 @@ void Battle::drawMainView() {
     drawEnemyPartySprite(animEnemy, 0);
 }
 
-void Battle::draw(uint32_t tick) {
+void Battle::draw(uint32_t tick, Menu *menu) {
     pen(15,15,15);
     clear();
     drawWindow(0, 88, 120, 32);
 
     switch(scene) {
-
         case BATTLE_INTRO_TEXT:
         case BATTLE_INTRO_ANIMATION:
         case BATTLE_ENEMY_NAME_TEXT:
@@ -490,17 +529,25 @@ void Battle::draw(uint32_t tick) {
         case BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT:
             drawMainView();
             drawActions();
+            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
             break;
         case BATTLE_WAIT_FOR_PLAYER_MOVE_INPUT:
             drawMainView();
             drawMoves();
+            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
             break;
         // case BATTLE_RUN_AWAY:
         // case END_BATTLE:
         //     drawMainView();
         //     break;
+        case BATTLE_OPEN_PARTY:
+            drawMainView();
+            drawActions();
+            menu->party->draw(tick);
+            break;
         default:
             drawMainView();
+            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
             break;
     }
 }

@@ -1579,6 +1579,30 @@ engine/Battle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Battle.cpp.s
 .PHONY : engine/Battle.cpp.s
 
+engine/LoadGame.obj: engine/LoadGame.cpp.obj
+.PHONY : engine/LoadGame.obj
+
+# target to build an object file
+engine/LoadGame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/LoadGame.cpp.obj
+.PHONY : engine/LoadGame.cpp.obj
+
+engine/LoadGame.i: engine/LoadGame.cpp.i
+.PHONY : engine/LoadGame.i
+
+# target to preprocess a source file
+engine/LoadGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/LoadGame.cpp.i
+.PHONY : engine/LoadGame.cpp.i
+
+engine/LoadGame.s: engine/LoadGame.cpp.s
+.PHONY : engine/LoadGame.s
+
+# target to generate assembly for a file
+engine/LoadGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/LoadGame.cpp.s
+.PHONY : engine/LoadGame.cpp.s
+
 engine/Map.obj: engine/Map.cpp.obj
 .PHONY : engine/Map.obj
 
@@ -2098,6 +2122,9 @@ help:
 	@echo "... engine/Battle.obj"
 	@echo "... engine/Battle.i"
 	@echo "... engine/Battle.s"
+	@echo "... engine/LoadGame.obj"
+	@echo "... engine/LoadGame.i"
+	@echo "... engine/LoadGame.s"
 	@echo "... engine/Map.obj"
 	@echo "... engine/Map.i"
 	@echo "... engine/Map.s"

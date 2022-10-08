@@ -10,10 +10,10 @@ using namespace picosystem;
 
 class Party {       
     private:
-        int8_t menuIndex;
         int8_t partySwitch;
 
     public:
+        int8_t menuIndex;
         bool closing;
         bool pressedBack;
 
@@ -25,4 +25,5 @@ class Party {
         Party();
         void draw(uint32_t tick);
         void update(uint32_t tick);
+        void close();
 };

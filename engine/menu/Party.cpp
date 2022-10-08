@@ -10,6 +10,12 @@ Party::Party() {
     partySwitch = -1;
 }
 
+void Party::close() {
+    waitForOpenAnimation = false;
+    waitForCloseAnimation = true;
+    pressedBack = true;
+}
+
 void Party::update(uint32_t tick) {
     closing = false;
     if (pressed(B)) {
@@ -47,7 +53,7 @@ void Party::update(uint32_t tick) {
         }
     }
 
-    if (pressed(Y)) {
+    if (pressed(Y) && MainScene != BATTLE) {
         if (partySwitch == -1) {
             partySwitch = menuIndex;
         } else {
@@ -58,7 +64,7 @@ void Party::update(uint32_t tick) {
 }
 
 void Party::draw(uint32_t tick) {
-    drawWindow(animX, 0, 56, 92);
+    drawWindow(animX, 0, 56, MainScene != BATTLE ? 92 : 83);
     for (int32_t i = 0; i < party.size(); i++) {
         if (i == partySwitch) {
             frect(animX + 2, (i*26) + 2, 52, 27);
@@ -68,12 +74,6 @@ void Party::draw(uint32_t tick) {
             frect(animX + 2, (i*26) + 2, 52, 27);
             pen(themeR,themeG,themeB);
         }
-        // text(getPimonData(party, i).name, animX + 10, (i*26) + 4);
-        // std::string lvlText = "Lvl ";
-        // text(lvlText.append(str(xpToLvl(party.at(i).xp))), animX + 10, (i*26) + 12);
-        // text("100/100", animX + 10, (i*26) + 20);
-
-
         std::string txt = "";
         text(getPimonData(party, i).name, animX + 10, (i*26) + 4);
         txt = "L: ";
@@ -94,8 +94,10 @@ void Party::draw(uint32_t tick) {
     vline(animX+5, (menuIndex * 26) + 6, 4);
     vline(animX+6, (menuIndex * 26) + 7, 2);
 
-    pen(themeR,themeG,themeB);
-    hline(animX+2, 80, 35);
-    vline(animX+37, 81, 9);
-    text("Y swap",animX+3,82);
+    if (MainScene != BATTLE) {
+        pen(themeR,themeG,themeB);
+        hline(animX+2, 80, 35);
+        vline(animX+37, 81, 9);
+        text("Y swap",animX+3,82);
+    }
 }

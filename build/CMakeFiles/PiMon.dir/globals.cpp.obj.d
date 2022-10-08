@@ -241,6 +241,10 @@ CMakeFiles/PiMon.dir/globals.cpp.obj: /Users/wyatt/Dev/PiMon/globals.cpp \
  /Users/wyatt/Dev/PiMon/sprites/npcs/5.cpp \
  /Users/wyatt/Dev/PiMon/sprites/npcs/6.cpp \
  /Users/wyatt/Dev/PiMon/sprites/npcs/7.cpp \
+ /Users/wyatt/Dev/PiMon/sprites/npcs/8.cpp \
+ /Users/wyatt/Dev/PiMon/sprites/npcs/9.cpp \
+ /Users/wyatt/Dev/PiMon/sprites/npcs/10.cpp \
+ /Users/wyatt/Dev/PiMon/sprites/npcs/11.cpp \
  /Users/wyatt/Dev/PiMon/sprites/Logo.cpp \
  /Users/wyatt/Dev/PiMon/sprites/players/1.cpp \
  /Users/wyatt/Dev/PiMon/sprites/players/2.cpp \
