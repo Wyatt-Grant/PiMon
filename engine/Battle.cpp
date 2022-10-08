@@ -203,6 +203,7 @@ void Battle::handlePlayerSelectMoveInput() {
 void Battle::update(uint32_t tick, Message *message) {
     std::string msg = "";
 
+    // slide animations don't respect the waiting flag
     switch(scene) {
         case BATTLE_INTRO_TEXT:
         case BATTLE_INTRO_ANIMATION:
@@ -232,6 +233,7 @@ void Battle::update(uint32_t tick, Message *message) {
             }
             break;
     }
+    
     if (!waiting) {
         switch(scene) {
             case BATTLE_INTRO_TEXT:
@@ -370,7 +372,11 @@ void Battle::drawPlayerPartySprite(int32_t _x, int32_t _y) {
             draw56sprite(_x, _y);
         }
     } else {
-        draw56sprite(_x, _y);
+        if (scene == BATTLE_WAIT_FOR_PLAYER_MOVE) {
+            draw56sprite(_x+8, _y);
+        } else {
+            draw56sprite(_x, _y);
+        }
     }
 }
 
@@ -382,7 +388,11 @@ void Battle::drawEnemyPartySprite(int32_t _x, int32_t _y) {
             draw56sprite(_x, _y);
         }
     } else {
-        draw56sprite(_x, _y);
+        if (scene == BATTLE_WAIT_FOR_ENEMY_MOVE) {
+            draw56sprite(_x-8, _y);
+        } else {
+            draw56sprite(_x, _y);
+        }
     }
 }
 
