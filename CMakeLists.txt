@@ -13,6 +13,7 @@ set(PROJECT_SOURCES
     engine/Battle.cpp
     engine/TitleScreen.cpp
     engine/LoadGame.cpp
+    engine/NewGame.cpp
     engine/menu/Menu.cpp
     engine/menu/Dex.cpp
     engine/menu/TownMap.cpp

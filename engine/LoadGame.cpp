@@ -21,7 +21,7 @@ void LoadGame::update(uint32_t tick) {
             MainScene = OVERWORLD;
             changeSong = true;
         } else if (menuIndex == 1) {
-            MainScene = NEW_GAME_INTRO;
+            MainScene = NEW_GAME;
             // changeSong = true;
         }
     }

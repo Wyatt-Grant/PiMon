@@ -14,6 +14,7 @@
 #include "engine/Battle.hpp"
 #include "engine/TitleScreen.hpp"
 #include "engine/LoadGame.hpp"
+#include "engine/NewGame.hpp"
 #include "engine/menu/Menu.hpp"
 
 using namespace picosystem;
@@ -27,6 +28,7 @@ Message *message;
 Battle *battle;
 TitleScreen *titleScreen;
 LoadGame *loadGame;
+NewGame *newGame;
 Menu *menu;
 
 void init() {
@@ -39,6 +41,7 @@ void init() {
     battle = new Battle();
     titleScreen = new TitleScreen();
     loadGame = new LoadGame();
+    newGame = new NewGame();
     menu = new Menu();
 
     party.push_back({ 1, 20, getMaxHp(1, xpToLvl(30)), 0 });
@@ -66,7 +69,7 @@ void init() {
         }
     }});
 
-    // music
+    // music handled on its own core
     multicore_launch_core1(playMusic);
 }
 
@@ -80,7 +83,9 @@ void update(uint32_t tick) {
         case LOAD_GAME:
             loadGame->update(tick);
             break;
-        case NEWGAME_INTRO:
+        case NEW_GAME:
+            newGame->update(tick, message);
+            message->update(tick);
             break;
         case OVERWORLD:
             if (!menuOpen || forceDrawMap) {
@@ -106,7 +111,9 @@ void draw(uint32_t tick) {
         case LOAD_GAME:
             loadGame->draw(tick);
             break;
-        case NEWGAME_INTRO:
+        case NEW_GAME:
+            newGame->draw(tick);
+            message->draw(tick);
             break;
         case OVERWORLD:
             if (!menuOpen || forceDrawMap) {

@@ -171,6 +171,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/wyatt/Dev/PiMon/engine/LoadGame.cpp" "CMakeFiles/PiMon.dir/engine/LoadGame.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/LoadGame.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Map.cpp" "CMakeFiles/PiMon.dir/engine/Map.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Map.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Message.cpp" "CMakeFiles/PiMon.dir/engine/Message.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Message.cpp.obj.d"
+  "/Users/wyatt/Dev/PiMon/engine/NewGame.cpp" "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Npc.cpp" "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Player.cpp" "CMakeFiles/PiMon.dir/engine/Player.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Player.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/TitleScreen.cpp" "CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj.d"

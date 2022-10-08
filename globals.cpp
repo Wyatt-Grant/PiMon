@@ -15,6 +15,7 @@ int32_t playerStarter = 1;
 int32_t cashMoney = 0;
 int32_t patches = 0;
 int32_t gameTime = 0;
+
 //items
 int8_t potion = 3; // heal hp
 int8_t elixer = 1; // heal hp
@@ -80,6 +81,7 @@ int32_t lvlToXp(int32_t _lvl) {
     return (int32_t) pow(2, _lvl);
 }
 
+// pixel perfect spite
 // prevents weird artifcats when you to *try* and draw "outside" the buffer
 // allows you to be kind of lazy with animations
 void ppSprite(int32_t spriteOffset, int32_t posX, int32_t posY) {

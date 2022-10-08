@@ -302,4 +302,5 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
  /Users/wyatt/Dev/PiMon/engine/menu/Settings.hpp \
  /Users/wyatt/Dev/PiMon/engine/menu/Stats.hpp \
  /Users/wyatt/Dev/PiMon/engine/TitleScreen.hpp \
- /Users/wyatt/Dev/PiMon/engine/LoadGame.hpp
+ /Users/wyatt/Dev/PiMon/engine/LoadGame.hpp \
+ /Users/wyatt/Dev/PiMon/engine/NewGame.hpp

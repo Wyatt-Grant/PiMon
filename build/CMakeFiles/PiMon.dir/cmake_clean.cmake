@@ -116,6 +116,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PiMon.dir/engine/Map.cpp.obj.d"
   "CMakeFiles/PiMon.dir/engine/Message.cpp.obj"
   "CMakeFiles/PiMon.dir/engine/Message.cpp.obj.d"
+  "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj"
+  "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj.d"
   "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj"
   "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj.d"
   "CMakeFiles/PiMon.dir/engine/Player.cpp.obj"

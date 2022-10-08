@@ -1651,6 +1651,30 @@ engine/Message.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Message.cpp.s
 .PHONY : engine/Message.cpp.s
 
+engine/NewGame.obj: engine/NewGame.cpp.obj
+.PHONY : engine/NewGame.obj
+
+# target to build an object file
+engine/NewGame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj
+.PHONY : engine/NewGame.cpp.obj
+
+engine/NewGame.i: engine/NewGame.cpp.i
+.PHONY : engine/NewGame.i
+
+# target to preprocess a source file
+engine/NewGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/NewGame.cpp.i
+.PHONY : engine/NewGame.cpp.i
+
+engine/NewGame.s: engine/NewGame.cpp.s
+.PHONY : engine/NewGame.s
+
+# target to generate assembly for a file
+engine/NewGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/NewGame.cpp.s
+.PHONY : engine/NewGame.cpp.s
+
 engine/Npc.obj: engine/Npc.cpp.obj
 .PHONY : engine/Npc.obj
 
@@ -2131,6 +2155,9 @@ help:
 	@echo "... engine/Message.obj"
 	@echo "... engine/Message.i"
 	@echo "... engine/Message.s"
+	@echo "... engine/NewGame.obj"
+	@echo "... engine/NewGame.i"
+	@echo "... engine/NewGame.s"
 	@echo "... engine/Npc.obj"
 	@echo "... engine/Npc.i"
 	@echo "... engine/Npc.s"
