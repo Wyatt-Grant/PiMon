@@ -46,7 +46,7 @@ void NewGame::handleTextCursor() {
             playerName.pop_back();
         }
         if (pressed(X) && playerName.size() > 0) {
-            scene = TEXT_6;
+            scene = TEXT_3;
         }
     } else if (scene == RIVAL_INPUT) {
         if (pressed(A) && playerName.size() < 12) {
@@ -60,7 +60,7 @@ void NewGame::handleTextCursor() {
             rivalName.pop_back();
         }
         if (pressed(X) && playerName.size() > 0) {
-            scene = TEXT_11;
+            scene = TEXT_7;
         }
     }
 
@@ -85,7 +85,7 @@ void NewGame::handleAvatarInput() {
     }
 
     if (pressed(X)) {
-        scene = TEXT_8;
+        scene = TEXT_5;
     }
 }
 
@@ -109,41 +109,41 @@ void NewGame::update(uint32_t tick, Message *message) {
         case NAME_INPUT:
             handleTextCursor();
             break;
-        case TEXT_6:
+        case TEXT_3:
             message->showMessages({
                 { "What a nice name!\nNice to meet you\nPLAYER!", 0, []() -> void { return; } },
                 { "Now let me get a\nbetter look at you...", 0, []() -> void { return; } },
             });
-            scene = TEXT_7;
+            scene = TEXT_4;
             break;
-        case TEXT_7:
+        case TEXT_4:
             if (!waiting) scene = AVATAR_INPUT;
             break;
         case AVATAR_INPUT:
             handleAvatarInput();
             break;
-        case TEXT_8:
+        case TEXT_5:
             message->showMessages({
                 { "Ah now i can see you\nclearly!", 0, []() -> void { return; } },
                 { "Your very own PiMon\njourney is about to\nbegin!", 0, []() -> void { return; } },
                 { "Your neighbour...\nWhat was his name?", 0, []() -> void { return; } },
             });
-            scene = TEXT_9;
+            scene = TEXT_6;
             break;
-        case TEXT_9:
+        case TEXT_6:
             if (!waiting) scene = RIVAL_INPUT;
             break;
         case RIVAL_INPUT:
             handleTextCursor();
             break;
-        case TEXT_11:
+        case TEXT_7:
             message->showMessages({
                 { "Ah yes his name was\nRIVAL!", 0, []() -> void { return; } },
                 { "Looks like you're\nready to begin! Have\nfun!", 0, []() -> void { return; } },
             });
-            scene = TEXT_12;
+            scene = TEXT_8;
             break;
-        case TEXT_12:
+        case TEXT_8:
             if (!waiting) scene = NEW_GAME_END;
             break;
         case NEW_GAME_END:
