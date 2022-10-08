@@ -1,32 +1,4 @@
 namespace picosystem {
-    /**
-     * draw a pixel perfect sprite sprite within the screen bounds
-     *
-     * @param buffer        pointer to srptie buffer
-     * @param spriteOffset  sprite buffer offset
-     * @param posX          drawing x
-     * @param posY          drawing y
-     * 
-     * @return void
-     */
-    void ppSprite(buffer_t *buffer, int32_t spriteOffset, int32_t posX, int32_t posY) {
-        int32_t underflow = -8;
-        int32_t overflow = 120;
-
-        if (posY >= underflow && posX >= underflow && posY <= overflow && posX <= overflow) {
-            for (int32_t y = 0; y < 8; y++) {
-                for (int32_t x = 0; x < 8; x++) {
-                    if (posX + x >= 0 && posY + y >= 0) {
-                        uint32_t sx = ((spriteOffset * 8) % buffer->w) + x;
-                        uint32_t sy = (((spriteOffset * 8) / buffer->w) * 8) + y;
-                        blit(buffer, sx, sy, 1, 1, posX + x, posY + y);
-                    }
-                }
-            }
-        }
-    }
-
-
     voice_t piano = voice(20, 200, 50, 50);
     int16_t notes[] = { 0, 262, 277, 294, 311, 330, 349, 370, 391, 415, 440, 466, 494, 523, 554, 587, 622, 659, 698, 740, 784, 831, 880, 932, 988, 1047, 1109, 1175, 1245, 1319, 1397, 1480, 1568, 1661, 1760, 1865, 1976, 2093, 2217, 2349, 2489, 2637, 2794, 2960, 3136, 3322, 3520, 3729, 3951 };
 

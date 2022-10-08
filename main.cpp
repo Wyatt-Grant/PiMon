@@ -1,12 +1,12 @@
 #include <picosystem.hpp>
 #include <pico/multicore.h>
 #include <cstring>
+#include <math.h>
 
 #include "types.hpp"
 #include "globals.hpp"
 
 #include "Util.cpp"
-#include "Sprites.cpp"
 #include "engine/Map.hpp"
 #include "engine/Player.hpp"
 #include "engine/Npc.hpp"
@@ -38,14 +38,25 @@ void init() {
     titleScreen = new TitleScreen();
     menu = new Menu();
 
+    party.push_back({ 1, 20, getMaxHp(1, xpToLvl(30)), 0 });
+    party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
+    party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)), 0 });
+
+    // npc set up
     npcs.push_back(new Npc(84, 52, npc_1_overworld_buffer, npc_1_front_buffer, down));
     npcs.at(0)->addMessage({ "Hey PLAYER!", 0 });
-    npcs.at(0)->addMessage({ "Let's have a battle!", 0, startBattle });
+    npcs.at(0)->addMessage({ "Let's have a battle!", 0, []() -> void {
+        startBattle(); 
+        enemyParty.clear();
+        enemyParty.push_back({ 17, 20, getMaxHp(17, xpToLvl(20)), 0 });
+        enemyParty.push_back({ 15, 40, getMaxHp(15, xpToLvl(40)), 0 });
+    }});
 
     npcs.push_back(new Npc(116, 52, npc_2_overworld_buffer, npc_2_front_buffer, down));
     npcs.at(1)->addMessage({ "Hey PLAYER!", 0 });
     npcs.at(1)->addMessage({ "Let's not battle.", 0, []() -> void { return; } });
 
+    // music
     multicore_launch_core1(playMusic);
 }
 

@@ -10,6 +10,9 @@ using namespace picosystem;
 
 class Bag {       
     private:
+        int8_t menuIndex;
+        int8_t counter;
+        int8_t selected;
 
     public:
         bool closing;

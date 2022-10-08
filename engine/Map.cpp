@@ -1,8 +1,5 @@
 #include "engine/Map.hpp"
 
-#include "maps/town1/outside/town1_outside_tilemap.cpp"
-#include "maps/town1/outside/town1_outside_tileset.cpp"
-
 Map::Map() {
     offsetTileX = 0;
     offsetTileY = 0;
@@ -34,7 +31,7 @@ void Map::drawMap(const int16_t below[][80], const int16_t above[][80]) {
             if (!menuOpen) {
                 drawMapTile(below, x, y);
                 drawMapTile(above, x, y);
-            } else if (x > 8 && y < 13 && y > 9) {
+            } else if ((x > 8 && y < 13 && y > 9) || (x > 8 && x < 10)) {
                 drawMapTile(below, x, y);
                 drawMapTile(above, x, y);
             }

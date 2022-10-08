@@ -195,16 +195,26 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/string.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/strings.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/string.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/math.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/cmath \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/math.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/limits \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
  /Users/wyatt/Dev/PiMon/types.hpp /Users/wyatt/Dev/PiMon/globals.hpp \
- /Users/wyatt/Dev/PiMon/Util.cpp /Users/wyatt/Dev/PiMon/Sprites.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/1.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/2.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/3.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/4.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/5.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/6.cpp \
- /Users/wyatt/Dev/PiMon/sprites/npcs/7.cpp \
- /Users/wyatt/Dev/PiMon/engine/Map.hpp /Users/wyatt/Dev/PiMon/globals.hpp \
+ /Users/wyatt/Dev/PiMon/Util.cpp /Users/wyatt/Dev/PiMon/engine/Map.hpp \
+ /Users/wyatt/Dev/PiMon/globals.hpp \
  /Users/wyatt/Dev/PiMon/engine/Player.hpp \
  /Users/wyatt/Dev/PiMon/engine/Npc.hpp \
  /Users/wyatt/Dev/PiMon/engine/Message.hpp \
@@ -214,7 +224,6 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
- /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/limits \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/pstl/glue_algorithm_defs.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/functional \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \

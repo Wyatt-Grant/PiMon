@@ -3845,8 +3845,7 @@ CMakeFiles/PiMon.dir/engine/Battle.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Battle
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.tcc \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.h \
-  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc \
-  /Users/wyatt/Dev/PiMon/sprites/players/backs.cpp
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc
 
 CMakeFiles/PiMon.dir/engine/Map.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Map.cpp \
   /Users/wyatt/Dev/PiMon/engine/Map.hpp \
@@ -4036,9 +4035,7 @@ CMakeFiles/PiMon.dir/engine/Map.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Map.cpp \
   /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
   /Users/wyatt/Dev/PiMon/types.hpp \
-  /Users/wyatt/Dev/PiMon/globals.hpp \
-  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tilemap.cpp \
-  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tileset.cpp
+  /Users/wyatt/Dev/PiMon/globals.hpp
 
 CMakeFiles/PiMon.dir/engine/Message.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Message.cpp \
   /Users/wyatt/Dev/PiMon/engine/Message.hpp \
@@ -4498,8 +4495,7 @@ CMakeFiles/PiMon.dir/engine/Npc.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Npc.cpp \
   /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
   /Users/wyatt/Dev/PiMon/types.hpp \
-  /Users/wyatt/Dev/PiMon/globals.hpp \
-  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_colliders.cpp
+  /Users/wyatt/Dev/PiMon/globals.hpp
 
 CMakeFiles/PiMon.dir/engine/Player.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Player.cpp \
   /Users/wyatt/Dev/PiMon/engine/Player.hpp \
@@ -4771,11 +4767,7 @@ CMakeFiles/PiMon.dir/engine/Player.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Player
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.tcc \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.h \
-  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc \
-  /Users/wyatt/Dev/PiMon/sprites/players/1.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/players/2.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/players/3.cpp \
-  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_colliders.cpp
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc
 
 CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj: /Users/wyatt/Dev/PiMon/engine/TitleScreen.cpp \
   /Users/wyatt/Dev/PiMon/engine/TitleScreen.hpp \
@@ -4965,8 +4957,7 @@ CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj: /Users/wyatt/Dev/PiMon/engine/T
   /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
   /Users/wyatt/Dev/PiMon/types.hpp \
-  /Users/wyatt/Dev/PiMon/globals.hpp \
-  /Users/wyatt/Dev/PiMon/sprites/Logo.cpp
+  /Users/wyatt/Dev/PiMon/globals.hpp
 
 CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Bag.cpp \
   /Users/wyatt/Dev/PiMon/engine/menu/Bag.hpp \
@@ -6572,7 +6563,89 @@ CMakeFiles/PiMon.dir/globals.cpp.obj: /Users/wyatt/Dev/PiMon/globals.cpp \
   /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
   /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
   /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
-  /Users/wyatt/Dev/PiMon/types.hpp
+  /Users/wyatt/Dev/PiMon/types.hpp \
+  /Users/wyatt/Dev/PiMon/Sprites.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/1.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/2.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/3.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/4.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/5.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/6.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/7.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/8.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/9.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/10.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/11.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/12.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/13.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/14.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/15.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/16.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/17.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/18.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/19.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/20.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/21.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/22.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/23.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_front/24.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/1.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/2.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/3.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/4.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/5.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/6.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/7.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/8.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/9.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/10.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/11.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/12.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/13.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/14.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/15.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/16.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/17.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/18.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/19.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/20.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/21.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/22.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/23.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/pimon_back/24.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/1.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/2.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/3.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/4.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/5.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/6.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/npcs/7.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/Logo.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/players/1.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/players/2.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/players/3.cpp \
+  /Users/wyatt/Dev/PiMon/sprites/players/backs.cpp \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/math.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/cmath \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/math.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/limits \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
+  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_colliders.cpp \
+  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tilemap.cpp \
+  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tileset.cpp \
+  /Users/wyatt/Dev/PiMon/PimonData.cpp
 
 CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
   /Users/wyatt/Dev/picosystem/libraries/picosystem.hpp \
@@ -6771,17 +6844,26 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/string.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/strings.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/string.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/math.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/cmath \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/math.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/specfun.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/limits \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/gamma.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/special_function_util.h \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/beta_function.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/exp_integral.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/legendre_function.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/modified_bessel_func.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_hermite.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc \
+  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc \
   /Users/wyatt/Dev/PiMon/types.hpp \
   /Users/wyatt/Dev/PiMon/globals.hpp \
   /Users/wyatt/Dev/PiMon/Util.cpp \
-  /Users/wyatt/Dev/PiMon/Sprites.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/1.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/2.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/3.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/4.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/5.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/6.cpp \
-  /Users/wyatt/Dev/PiMon/sprites/npcs/7.cpp \
   /Users/wyatt/Dev/PiMon/engine/Map.hpp \
   /Users/wyatt/Dev/PiMon/globals.hpp \
   /Users/wyatt/Dev/PiMon/engine/Player.hpp \
@@ -6793,7 +6875,6 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/algorithmfwd.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/stl_heap.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/uniform_int_dist.h \
-  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/limits \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/pstl/glue_algorithm_defs.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/functional \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/std_function.h \
@@ -6874,11 +6955,79 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
   /Users/wyatt/Dev/PiMon/engine/menu/Stats.hpp
 
 
+/Users/wyatt/Dev/PiMon/PimonData.cpp:
+
+/Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tileset.cpp:
+
+/Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tilemap.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/players/2.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/players/1.cpp:
+
 /Users/wyatt/Dev/PiMon/sprites/npcs/7.cpp:
 
 /Users/wyatt/Dev/PiMon/sprites/npcs/6.cpp:
 
 /Users/wyatt/Dev/PiMon/sprites/npcs/4.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/24.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/23.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/22.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/19.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/18.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/14.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/13.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/12.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/11.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/8.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/17.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/7.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/6.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/5.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/4.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/1.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/24.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/23.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/22.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/21.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/19.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/16.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/15.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/14.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/13.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/12.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/9.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/8.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/1.cpp:
 
 /Users/wyatt/Dev/PiMon/globals.cpp:
 
@@ -6902,17 +7051,11 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
 
 /Users/wyatt/Dev/PiMon/engine/TitleScreen.cpp:
 
-/Users/wyatt/Dev/PiMon/sprites/players/2.cpp:
-
-/Users/wyatt/Dev/PiMon/sprites/players/1.cpp:
-
 /Users/wyatt/Dev/PiMon/engine/Npc.hpp:
 
-/Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tileset.cpp:
-
-/Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tilemap.cpp:
-
 /Users/wyatt/Dev/PiMon/engine/Map.hpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/9.cpp:
 
 /Users/wyatt/Dev/PiMon/engine/Map.cpp:
 
@@ -6984,6 +7127,8 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/locale_classes.tcc:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/5.cpp:
+
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/ios_base.h:
 
 /Users/wyatt/Dev/PiMon/engine/menu/Menu.cpp:
@@ -7036,6 +7181,8 @@ screen_double.pio.h:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/2.cpp:
+
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/hypergeometric.tcc:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/ell_integral.tcc:
@@ -7069,6 +7216,10 @@ screen_double.pio.h:
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/exception.h:
 
 /Users/wyatt/Dev/picosystem/libraries/audio.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/11.cpp:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/7.cpp:
 
 /Users/wyatt/Dev/PiMon/types.hpp:
 
@@ -7147,6 +7298,8 @@ screen_double.pio.h:
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/include/pico/printf.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/concepts:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/3.cpp:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/iterator_concepts.h:
 
@@ -7286,6 +7439,8 @@ screen_double.pio.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/stl_algobase.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/17.cpp:
+
 /Users/wyatt/Dev/PiMon/engine/menu/Dex.cpp:
 
 /Users/wyatt/Dev/pico-sdk/src/common/pico_base/include/pico/config.h:
@@ -7308,7 +7463,11 @@ screen_double.pio.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/machine/_types.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/18.cpp:
+
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/pstl/pstl_config.h:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/20.cpp:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/char_traits.h:
 
@@ -7352,6 +7511,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/riemann_zeta.tcc:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/21.cpp:
+
 /Users/wyatt/Dev/pico-sdk/src/common/pico_base/include/pico/assert.h:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h:
@@ -7380,6 +7541,8 @@ generated/pico_base/pico/config_autogen.h:
 
 /Users/wyatt/Dev/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/2.cpp:
+
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h:
@@ -7393,6 +7556,8 @@ generated/pico_base/pico/config_autogen.h:
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/include/pico/float.h:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/16.cpp:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/poly_laguerre.tcc:
 
@@ -7417,6 +7582,8 @@ generated/pico_base/pico/config_autogen.h:
 /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/scb.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/unordered_map.h:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/15.cpp:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h:
 
@@ -7576,6 +7743,8 @@ generated/pico_base/pico/version.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/_ansi.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/3.cpp:
+
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/machine/stdlib.h:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h:
@@ -7587,6 +7756,8 @@ generated/pico_base/pico/version.h:
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/sys/_pthreadtypes.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_scanner.h:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_back/10.cpp:
 
 /Users/wyatt/Dev/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h:
 
@@ -7638,6 +7809,8 @@ generated/pico_base/pico/version.h:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/ext/string_conversions.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/10.cpp:
+
 /Users/wyatt/Dev/pico-sdk/src/common/pico_base/include/pico/error.h:
 
 /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/include/pico/mutex.h:
@@ -7662,6 +7835,8 @@ generated/pico_base/pico/version.h:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h:
 
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/4.cpp:
+
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
@@ -7677,6 +7852,8 @@ generated/pico_base/pico/version.h:
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/6.cpp:
 
 /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c:
 
@@ -7703,6 +7880,8 @@ generated/pico_base/pico/version.h:
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/tr1/bessel_function.tcc:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/math.h:
+
+/Users/wyatt/Dev/PiMon/sprites/pimon_front/20.cpp:
 
 /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c:
 

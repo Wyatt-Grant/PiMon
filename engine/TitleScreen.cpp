@@ -1,7 +1,5 @@
 #include "engine/TitleScreen.hpp"
 
-#include "sprites/Logo.cpp"
-
 TitleScreen::TitleScreen() {
     logoY = -56;
 }
@@ -26,13 +24,13 @@ void TitleScreen::ppSpriteLogo(buffer_t *buffer, int32_t spriteOffset, int32_t p
 void TitleScreen::drawLogoCharacter(int32_t _x, int32_t _y) {
     switch(playerAvatar) {
         case 1:
-            spritesheet(character1_logo_buffer);
+            spritesheet(character_1_front_buffer);
             break;
         case 2:
-            spritesheet(character2_logo_buffer);
+            spritesheet(character_2_front_buffer);
             break;
         case 3:
-            spritesheet(character3_logo_buffer);
+            spritesheet(character_3_front_buffer);
             break;
     }
     for (int x = 0; x < 7; x++) {
@@ -46,16 +44,16 @@ void TitleScreen::drawLogoCharacter(int32_t _x, int32_t _y) {
 void TitleScreen::drawLogoMonster(int32_t _x, int32_t _y) {
     switch(playerStarter) {
         case 1:
-            spritesheet(monster1_logo_buffer);
+            spritesheet(pimon_1_sprite_sheet);
             break;
         case 2:
-            spritesheet(monster2_logo_buffer);
+            spritesheet(pimon_3_sprite_sheet);
             break;
         case 3:
-            spritesheet(monster3_logo_buffer);
+            spritesheet(pimon_5_sprite_sheet);
             break;
         case 4:
-            spritesheet(monster4_logo_buffer);
+            spritesheet(pimon_7_sprite_sheet);
             break;
     }
     for (int x = 0; x < 7; x++) {

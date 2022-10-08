@@ -1,11 +1,5 @@
 #include "engine/Player.hpp"
 
-#include "sprites/players/1.cpp"
-#include "sprites/players/2.cpp"
-#include "sprites/players/3.cpp"
-
-#include "maps/town1/outside/town1_outside_colliders.cpp"
-
 Player::Player(int32_t x, int32_t y) {
     position.x = x;
     position.y = y;

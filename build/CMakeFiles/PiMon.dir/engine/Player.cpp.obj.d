@@ -268,8 +268,4 @@ CMakeFiles/PiMon.dir/engine/Player.cpp.obj: \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.h \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.tcc \
  /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.h \
- /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc \
- /Users/wyatt/Dev/PiMon/sprites/players/1.cpp \
- /Users/wyatt/Dev/PiMon/sprites/players/2.cpp \
- /Users/wyatt/Dev/PiMon/sprites/players/3.cpp \
- /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_colliders.cpp
+ /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc

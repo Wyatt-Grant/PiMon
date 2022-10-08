@@ -1,7 +1,5 @@
 #include "engine/Npc.hpp"
 
-#include "maps/town1/outside/town1_outside_colliders.cpp"
-
 Npc::Npc(int32_t x, int32_t y, buffer_t *b, buffer_t *b2, Direction d = down) {
     avatar = 1;
     position.x = x;

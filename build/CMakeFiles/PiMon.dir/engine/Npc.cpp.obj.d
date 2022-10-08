@@ -186,5 +186,4 @@ CMakeFiles/PiMon.dir/engine/Npc.cpp.obj: \
  /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/wyatt/Dev/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
  /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
- /Users/wyatt/Dev/PiMon/types.hpp /Users/wyatt/Dev/PiMon/globals.hpp \
- /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_colliders.cpp
+ /Users/wyatt/Dev/PiMon/types.hpp /Users/wyatt/Dev/PiMon/globals.hpp

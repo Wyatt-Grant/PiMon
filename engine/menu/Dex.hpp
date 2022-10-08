@@ -10,6 +10,11 @@ using namespace picosystem;
 
 class Dex {       
     private:
+        int8_t dexIndex;
+        int8_t dexOffset;
+        bool heldUp;
+        bool heldDown;
+        int16_t heldCounter;
 
     public:
         bool closing;
