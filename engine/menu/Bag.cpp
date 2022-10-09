@@ -16,12 +16,16 @@ Bag::Bag() {
 void Bag::update(uint32_t tick, Message *message) {
     closing = false;
     if (pressed(A) && animX == 64 && partyMenu->animX != 64 && !waiting) { // open bag, but dont re-open
-        if (selected != 0 && selected != 1) { // if not potion or elixer
+        if (selected != 0 && selected != 1 && MainScene != BATTLE) { // if not potion or elixer and not in battle - you can't use
             message->showMessage("This can only be\nused in a battle...");
         } else {
-            partyMenu->waitForOpenAnimation = true;
-            partyMenu->animX = 120;
-            partyOpen = true;
+            if ((selected == 2 || selected == 3 || selected == 4) && !isWildBattle) { // cant catch non wild pimon
+                message->showMessage("This can only be\nused on wild PiMon...");
+            } else {
+                partyMenu->waitForOpenAnimation = true;
+                partyMenu->animX = 120;
+                partyOpen = true;
+            }
         }
     }
 
@@ -33,6 +37,27 @@ void Bag::update(uint32_t tick, Message *message) {
         if (selected == 1) { //elixer
             party.at(partyMenu->menuIndex).hp = getMaxHp(party.at(partyMenu->menuIndex).pimon_id, xpToLvl(party.at(partyMenu->menuIndex).xp));
             elixer -= 1;
+        }
+        if (selected == 2) { //ruby
+            ruby -= 1;
+        }
+        if (selected == 3) { //emerald
+            emerald -= 1;
+        }
+        if (selected == 4) { //diamond
+            diamond -= 1;
+        }
+        if (selected == 5) { //coffee
+            if (party.at(partyMenu->menuIndex).status == SLEEPING) party.at(partyMenu->menuIndex).status = NONE;
+            coffee -= 1;
+        }
+        if (selected == 6) { //cure
+            if (party.at(partyMenu->menuIndex).status == CONFUSED) party.at(partyMenu->menuIndex).status = NONE;
+            cure -= 1;
+        }
+        if (selected == 7) { //icePack
+            if (party.at(partyMenu->menuIndex).status == BURNED) party.at(partyMenu->menuIndex).status = NONE;
+            icePack -= 1;
         }
         partyOpen = false;
         partyMenu->waitForOpenAnimation = false;

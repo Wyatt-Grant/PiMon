@@ -51,6 +51,7 @@ class Battle {
             BATTLE_WAIT_FOR_ENEMY_SWITCH,
 
             BATTLE_OPEN_PARTY,
+            BATTLE_OPEN_BAG,
 
             BATTLE_RUN_AWAY,
             BATTLE_WIN,

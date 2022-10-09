@@ -126,6 +126,7 @@ extern int8_t cure;
 extern int8_t icePack;
 extern std::vector<trainerPimon> party;
 extern std::vector<trainerPimon> enemyParty;
+extern bool isWildBattle;
 
 extern pimon genericPimonData[];
 

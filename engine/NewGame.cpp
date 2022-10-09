@@ -272,16 +272,6 @@ void NewGame::draw(uint32_t tick) {
             drawRivalName();
             drawArrow(5 + (textCursorX * 13), 26 + (textCursorY * (12)));
             break;
-        case TEXT_10:
-            drawWindow(24, 14, 72, 60);
-            spritesheet(npc_2_overworld_buffer);
-            sprite(0,74,55);
-            sprite(1,82,55);
-            sprite(24,74,63);
-            sprite(25,82,63);
-            spritesheet(npc_2_front_buffer);
-            draw56sprite(32, 16);
-            break;
         case NEW_GAME_END:
             break;
         default:

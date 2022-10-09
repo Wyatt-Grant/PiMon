@@ -44,6 +44,7 @@ bool menuOpen = false;
 bool forceDrawMap = false;
 std::vector<trainerPimon> party;
 std::vector<trainerPimon> enemyParty;
+bool isWildBattle = false;
 
 #include "PimonData.cpp"
 

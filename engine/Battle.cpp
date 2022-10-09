@@ -148,6 +148,9 @@ void Battle::handlePlayerSelectActionInput(Menu *menu) {
                 scene = BATTLE_WAIT_FOR_PLAYER_MOVE_INPUT;
                 break;
             case 1:
+                scene = BATTLE_OPEN_BAG;
+                menu->bag->waitForOpenAnimation = true;
+                menu->bag->animX = 120;
                 break;
             case 2:
                 scene = BATTLE_OPEN_PARTY;
@@ -229,6 +232,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 slideOutPlayer();
             }
             if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->update(tick);
+            if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->update(tick, message);
             break;
         case BATTLE_WAIT_FOR_ENEMY_SWITCH:
             if (animSwitched) {
@@ -266,8 +270,22 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
             }
             menu->party->update(tick);
             break;
+        case BATTLE_OPEN_BAG:
+            if (pressed(B) && !menu->bag->partyOpen) {
+                scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+            }
+            if (pressed(A) && menu->bag->partyOpen) {
+                menu->bag->waitForOpenAnimation = false;
+                menu->bag->waitForCloseAnimation = true;
+                menu->bag->pressedBack = true;
+                waitingForPartySwitch = true; //just prevents player from attacking after enemy, even if slower. should probably rename
+                scene = BATTLE_WAIT_FOR_ENEMY_MOVE;
+            }
+            menu->bag->update(tick, message);
+            break;
         default:
             if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->update(tick);
+            if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->update(tick, message);
             break;
     }
     
@@ -460,7 +478,7 @@ void Battle::drawActions() {
     text("Bag", 70, 94);
     text("Run", 70, 106);
 
-    if (scene != BATTLE_OPEN_PARTY) {
+    if (scene != BATTLE_OPEN_PARTY && scene != BATTLE_OPEN_BAG) {
         int cursorX = (actionIndex == 0 || actionIndex == 2) ? 4 : 64;
         int cursorY = (actionIndex == 0 || actionIndex == 1) ? 94 : 106;
         vline(cursorX, cursorY, 8);
@@ -530,11 +548,13 @@ void Battle::draw(uint32_t tick, Menu *menu) {
             drawMainView();
             drawActions();
             if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
+            if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->draw(tick);
             break;
         case BATTLE_WAIT_FOR_PLAYER_MOVE_INPUT:
             drawMainView();
             drawMoves();
             if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
+            if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->draw(tick);
             break;
         // case BATTLE_RUN_AWAY:
         // case END_BATTLE:
@@ -545,9 +565,15 @@ void Battle::draw(uint32_t tick, Menu *menu) {
             drawActions();
             menu->party->draw(tick);
             break;
+        case BATTLE_OPEN_BAG:
+            drawMainView();
+            drawActions();
+            menu->bag->draw(tick);
+            break;
         default:
             drawMainView();
             if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
+            if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->draw(tick);
             break;
     }
 }

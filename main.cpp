@@ -52,7 +52,8 @@ void init() {
     npcs.push_back(new Npc(84, 52, npc_1_overworld_buffer, npc_1_front_buffer, down));
     npcs.at(0)->addMessage({ "Hey PLAYER!", 0 });
     npcs.at(0)->addMessage({ "Let's have a battle!", 0, []() -> void {
-        startBattle(); 
+        startBattle();
+        isWildBattle = false;
         enemyParty.clear();
         enemyParty.push_back({ 17, 20, getMaxHp(17, xpToLvl(20)), 0 });
         enemyParty.push_back({ 15, 40, getMaxHp(15, xpToLvl(40)), 0 });
