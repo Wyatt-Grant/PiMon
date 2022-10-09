@@ -47,7 +47,7 @@ void init() {
     menu = new Menu();
     teleporter = new Teleporter();
 
-    party.push_back({ 1, 1000, getMaxHp(1, xpToLvl(1000)), 0 });
+    party.push_back({ 9, 1025, getMaxHp(9, xpToLvl(1025)), 0 });
     party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
     // party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
 
@@ -58,7 +58,7 @@ void init() {
         startBattle();
         isWildBattle = false;
         enemyParty.clear();
-        enemyParty.push_back({ 17, 20, getMaxHp(17, xpToLvl(20)), 0 });
+        enemyParty.push_back({ 9, 1025, getMaxHp(9, xpToLvl(1025)), 0 });
         enemyParty.push_back({ 15, 40, getMaxHp(15, xpToLvl(40)), 0 });
     }});
 

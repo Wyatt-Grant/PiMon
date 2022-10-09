@@ -14,9 +14,9 @@ move genericMoveData[] = {
     { 9, "Quantum Shot", NONE, 80, 90, TARGET_OPPONENT, SPECIAL_DAMAGE, BASIC_ATTACK, 100 },
 
     // status attacks
-    { 10, "Hypnotize", NONE, 0, 70, TARGET_OPPONENT, PHYSICAL_DAMAGE, SLEEP_ATTACK, 100 }, // sleep
-    { 11, "Psychosis", NONE, 0, 70, TARGET_OPPONENT, PHYSICAL_DAMAGE, CONFUSION_ATTACK, 100 }, // confusion
-    { 12, "Slow Roast", NONE, 0, 100, TARGET_OPPONENT, PHYSICAL_DAMAGE, BURN_ATTACK, 100 }, // burned
+    { 10, "Hypnotize", NONE, 0, 70, TARGET_OPPONENT, NO_DAMAGE, SLEEP_ATTACK, 100 }, // sleep
+    { 11, "Psychosis", NONE, 0, 70, TARGET_OPPONENT, NO_DAMAGE, CONFUSION_ATTACK, 100 }, // confusion
+    { 12, "Slow Roast", NONE, 0, 100, TARGET_OPPONENT, NO_DAMAGE, BURN_ATTACK, 100 }, // burned
 
     // user stat attacks
     { 13, "Iron Skin", NONE, 60, 90, TARGET_USER, NO_DAMAGE, RAISE_USER_DEFENSE, 100 }, // defense

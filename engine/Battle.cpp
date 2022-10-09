@@ -43,28 +43,17 @@ void Battle::setNextEnemyPartyPimonIndex() {
 }
 
 int32_t Battle::calcDamage(trainerPimon attacker, pimon defender, move usedMove) {
-    // if (usedMove.damage_type == NO_DAMAGE) {
-    //     return 0;
-    // }
-
-    // if (usedMove.effect_id == FIXED_DAMAGE_ATTACK) {
-    //     return usedMove.effect_chance;
-    // }
+    if (usedMove.damage_type == NO_DAMAGE) {
+        return 0;
+    }
 
     int32_t level = xpToLvl(attacker.xp);
     int32_t crit = 1;
     wasCrit = false;
-    // if (usedMove.effect_id == INCREASED_CRIT_ATTACK) {
-    //     if (rand() % 16 < 8) {
-    //         crit = 2;
-    //             wasCrit = true;
-    //     }
-    // } else {
-        if (rand() % 16 == 0) {
-            crit = 2;
-                wasCrit = true;
-        }
-    // }
+    if (rand() % 16 == 0) {
+        crit = 2;
+            wasCrit = true;
+    }
 
     int32_t power = usedMove.power;
     int32_t attack = genericPimonData[attacker.pimon_id-1].attack;
@@ -370,49 +359,189 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_MOVE : BATTLE_WAIT_FOR_ENEMY_MOVE;
                 break;
             case BATTLE_WAIT_FOR_PLAYER_MOVE:
-                msg = getPimonData(party, playerPartyIndex).name;
-                damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
-                message->showMessage(msg.append(" used\n").append(getPimonData(party, playerPartyIndex).moves.at(actionIndex).name).append("!"));
+                if (party.at(playerPartyIndex).status == SLEEPING) {
+                    if ((rand() % 3) == 1) { // if woke up, 1/3 chance
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        msg.append("\nwoke up and used\n");
+                        msg.append(getPimonData(party, playerPartyIndex).moves.at(actionIndex).name);
+                        msg.append("!");
+                        damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
+                        message->showMessage(msg);
+                        party.at(playerPartyIndex).status = NONE;
+                        scene = BATTLE_WAIT_FOR_PLAYER_DAMAGE;
+                    } else {
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        message->showMessage(msg.append("\nis sleeping!"));
+                        scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                    }
+                } else if (party.at(playerPartyIndex).status == BURNED) {
+                    if ((rand() % 5) == 1) { // if unburned, 1/5 chance
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        msg.append("'s\nburn healed\nand used ");
+                        msg.append(getPimonData(party, playerPartyIndex).moves.at(actionIndex).name);
+                        msg.append("!");
+                        damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
+                        message->showMessage(msg);
+                        party.at(playerPartyIndex).status = NONE;
+                        scene = BATTLE_WAIT_FOR_PLAYER_DAMAGE;
+                    } else {
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        msg.append("'s burn\nreduces damage.\nused ");
+                        msg.append(getPimonData(party, playerPartyIndex).moves.at(actionIndex).name);
+                        msg.append("!");
+                        damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
+                        damage = damage/2;
+                        message->showMessage(msg);
+                        scene = BATTLE_WAIT_FOR_PLAYER_DAMAGE;
+                    }
+                } else if (party.at(playerPartyIndex).status == CONFUSED) {
+                    
+                } else {
+                    msg = getPimonData(party, playerPartyIndex).name;
+                    damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
+                    message->showMessage(msg.append(" used\n").append(getPimonData(party, playerPartyIndex).moves.at(actionIndex).name).append("!"));
+                }
 
                 scene = BATTLE_WAIT_FOR_PLAYER_DAMAGE;
                 break;
             case BATTLE_WAIT_FOR_ENEMY_MOVE:
-                msg = getPimonData(enemyParty, enemyPartyIndex).name;
-                enemyMoveIndex = rand() % ((xpToLvl(enemyParty.at(0).xp)/5) + 1);
-                damage = calcDamage(enemyParty.at(enemyPartyIndex), getPimonData(party, playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex));
-                message->showMessage(msg.append(" used\n").append(getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).name).append("!"));
+                if (enemyParty.at(enemyPartyIndex).status == SLEEPING) {
+                    if ((rand() % 3) == 1) { // if woke up, 1/3 chance
+                        message->showMessage(msg.append("\nwoke up!"));
+                        enemyParty.at(enemyPartyIndex).status = NONE;
 
-                scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        msg.append("\nwoke up and used\n");
+                        msg.append(getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).name);
+                        msg.append("!");
+                        damage = calcDamage(enemyParty.at(enemyPartyIndex), getPimonData(party, playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex));
+                        message->showMessage(msg);
+                        enemyParty.at(enemyMoveIndex).status = NONE;
+                        scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
+                    } else {
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        message->showMessage(msg.append("\nis sleeping!"));
+                        scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
+                    }
+                } else if (enemyParty.at(enemyPartyIndex).status == BURNED) {
+                    if ((rand() % 5) == 1) { // if unburned, 1/5 chance
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        msg.append("'s\nburn healed\nand used ");
+                        msg.append(getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).name);
+                        msg.append("!");
+                        damage = calcDamage(enemyParty.at(enemyPartyIndex), getPimonData(party, playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex));
+                        message->showMessage(msg);
+                        scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
+                    } else {
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        msg.append("'s burn\nreduces damage.\nused ");
+                        msg.append(getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).name);
+                        msg.append("!");
+                        damage = calcDamage(enemyParty.at(enemyPartyIndex), getPimonData(party, playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex));
+                        damage = damage/2;
+                        message->showMessage(msg);
+                        enemyParty.at(enemyMoveIndex).status = NONE;
+                        scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
+                    }
+                } else if (enemyParty.at(enemyPartyIndex).status == CONFUSED) {
+                    
+                } else {
+                    msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                    enemyMoveIndex = rand() % ((xpToLvl(enemyParty.at(0).xp)/5) + 1);
+                    damage = calcDamage(enemyParty.at(enemyPartyIndex), getPimonData(party, playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex));
+                    message->showMessage(msg.append(" used\n").append(getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).name).append("!"));
+                    scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
+                }
                 actionIndex = 0;
                 break;
             case BATTLE_WAIT_FOR_PLAYER_DAMAGE:
-                if (damage == 0) {
-                    scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
-                } else {
-                    enemyParty.at(enemyPartyIndex).hp--;
-                    damage--;
-                    if (enemyParty.at(enemyPartyIndex).hp == 0) {
+                if (getPimonData(party, playerPartyIndex).moves.at(actionIndex).effect_id == SLEEP_ATTACK) {
+                    if (enemyParty.at(enemyPartyIndex).status == SLEEPING) {
                         msg = getPimonData(enemyParty, enemyPartyIndex).name;
-                        message->showMessage(msg.append("\nhas fainted!"));
-                        scene = BATTLE_WAIT_FOR_ENEMY_SWITCH;
-                        party.at(playerPartyIndex).xp += (enemyParty.at(enemyPartyIndex).xp * 5);
+                        message->showMessage(msg.append("\nis already asleep..."));
+                    } else if ((rand() % 2) == 1) { // 50/50 chance
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        message->showMessage(msg.append("\nfell asleep!"));
+                        enemyParty.at(enemyPartyIndex).status = SLEEPING;
+                    } else {
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        message->showMessage(msg.append("\nmanaged to stay\nawake!"));
+                    }
+                    scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                } else if (getPimonData(party, playerPartyIndex).moves.at(actionIndex).effect_id == BURN_ATTACK) {
+                    if (enemyParty.at(enemyPartyIndex).status == BURNED) {
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        message->showMessage(msg.append("\nis already burned..."));
+                    } else if ((rand() % 2) == 1) { // 50/50 chance
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        message->showMessage(msg.append("\ngot burned!"));
+                        enemyParty.at(enemyPartyIndex).status = BURNED;
+                    } else {
+                        msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                        message->showMessage(msg.append("\nmanaged to avoid\ngetting burned!"));
+                    }
+                    scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                } else if (getPimonData(party, playerPartyIndex).moves.at(actionIndex).effect_id == CONFUSION_ATTACK) {
+                    
+                } else {
+                    if (damage == 0) {
+                        scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                    } else {
+                        enemyParty.at(enemyPartyIndex).hp--;
+                        damage--;
+                        if (enemyParty.at(enemyPartyIndex).hp == 0) {
+                            msg = getPimonData(enemyParty, enemyPartyIndex).name;
+                            message->showMessage(msg.append("\nhas fainted!"));
+                            scene = BATTLE_WAIT_FOR_ENEMY_SWITCH;
+                            party.at(playerPartyIndex).xp += (enemyParty.at(enemyPartyIndex).xp * 5);
+                        }
                     }
                 }
                 break;
             case BATTLE_WAIT_FOR_ENEMY_DAMAGE:
-                if (damage == 0) {
-                    scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
-                    if (waitingForPartySwitch) {
-                        scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
-                        waitingForPartySwitch = false;
-                    }
-                } else {
-                    party.at(playerPartyIndex).hp--;
-                    damage--;
-                    if (party.at(playerPartyIndex).hp == 0) {
+                if (getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).effect_id == SLEEP_ATTACK) {
+                    if (party.at(playerPartyIndex).status == SLEEPING) {
                         msg = getPimonData(party, playerPartyIndex).name;
-                        message->showMessage(msg.append("\nhas fainted!"));
-                        scene = BATTLE_WAIT_FOR_PLAYER_SWITCH;
+                        message->showMessage(msg.append("\nis already asleep..."));
+                    } else if ((rand() % 2) == 1) { // 50/50 chance
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        message->showMessage(msg.append("\nfell asleep!"));
+                        party.at(playerPartyIndex).status = SLEEPING;
+                    } else {
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        message->showMessage(msg.append("\nmanaged to stay\nawake!"));
+                    }
+                    scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
+                } else if (getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).effect_id == BURN_ATTACK) {
+                    if (party.at(playerPartyIndex).status == BURNED) {
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        message->showMessage(msg.append("\nis already burned..."));
+                    } else if ((rand() % 2) == 1) { // 50/50 chance
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        message->showMessage(msg.append("\ngot burned!"));
+                        party.at(playerPartyIndex).status = BURNED;
+                    } else {
+                        msg = getPimonData(party, playerPartyIndex).name;
+                        message->showMessage(msg.append("\nmanaged to avoid\ngetting burned!"));
+                    }
+                    scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
+                } else if (getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).effect_id == CONFUSION_ATTACK) {
+                    
+                } else {
+                    if (damage == 0) {
+                        scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
+                        if (waitingForPartySwitch) {
+                            scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                            waitingForPartySwitch = false;
+                        }
+                    } else {
+                        party.at(playerPartyIndex).hp--;
+                        damage--;
+                        if (party.at(playerPartyIndex).hp == 0) {
+                            msg = getPimonData(party, playerPartyIndex).name;
+                            message->showMessage(msg.append("\nhas fainted!"));
+                            scene = BATTLE_WAIT_FOR_PLAYER_SWITCH;
+                        }
                     }
                 }
                 break;
@@ -470,8 +599,9 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 scene = BATTLE_INTRO_TEXT;
 
                 for (auto &tpimon : party) {
-                    if (xpToLvl(tpimon.xp) > 9 && (tpimon.pimon_id % 2 == 1)) { // if lvl 10 and haven't evolved
+                    if (xpToLvl(tpimon.xp) > 11 && (tpimon.pimon_id % 2 == 1)) { // if lvl 12 and haven't evolved
                         tpimon.pimon_id += 1;
+                        caughtPimon[tpimon.pimon_id-1] = true;
                         msg = genericPimonData[tpimon.pimon_id - 1].name;
                         msg.append("\nevolved!");
                         message->showMessage(msg);
@@ -490,7 +620,7 @@ void Battle::drawPlayerPartySprite(int32_t _x, int32_t _y) {
             draw56sprite(_x, _y);
         }
     } else {
-        if (scene == BATTLE_WAIT_FOR_PLAYER_MOVE) {
+        if (scene == BATTLE_WAIT_FOR_PLAYER_MOVE && party.at(playerPartyIndex).status == NONE) {
             draw56sprite(_x+8, _y);
         } else {
             draw56sprite(_x, _y);
@@ -508,7 +638,7 @@ void Battle::drawEnemyPartySprite(int32_t _x, int32_t _y) {
             draw56sprite(_x, _y);
         }
     } else {
-        if (scene == BATTLE_WAIT_FOR_ENEMY_MOVE) {
+        if (scene == BATTLE_WAIT_FOR_ENEMY_MOVE && enemyParty.at(enemyPartyIndex).status == NONE) {
             draw56sprite(_x-8, _y);
         } else {
             if (scene != BATTLE_USE_GEM_SUCCESS && scene != BATTLE_USE_GEM_FAILED) {
@@ -575,6 +705,11 @@ void Battle::drawMainView() {
     text(getPimonData(enemyParty, enemyPartyIndex).name,1,1);
     txt = "L: ";
     text(txt.append(str(xpToLvl(enemyParty.at(enemyPartyIndex).xp))),1,9);
+    txt = "";
+    if (enemyParty.at(enemyPartyIndex).status == SLEEPING) txt = "SLP";
+    if (enemyParty.at(enemyPartyIndex).status == CONFUSED) txt = "CNF";
+    if (enemyParty.at(enemyPartyIndex).status == BURNED) txt = "BRN";
+    text(txt,30,9);
     txt = "H: ";
     txt.append(str(enemyParty.at(enemyPartyIndex).hp));
     txt.append("/");
@@ -584,6 +719,11 @@ void Battle::drawMainView() {
     text(getPimonData(party, playerPartyIndex).name,60,64);
     txt = "L: ";
     text(txt.append(str(xpToLvl(party.at(playerPartyIndex).xp))),60,72);
+    txt = "";
+    if (party.at(playerPartyIndex).status == SLEEPING) txt = "SLP";
+    if (party.at(playerPartyIndex).status == CONFUSED) txt = "CNF";
+    if (party.at(playerPartyIndex).status == BURNED) txt = "BRN";
+    text(txt,90,72);
     txt = "H: ";
     txt.append(str(party.at(playerPartyIndex).hp));
     txt.append("/");

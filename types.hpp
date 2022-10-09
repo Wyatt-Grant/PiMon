@@ -57,11 +57,6 @@ const int32_t LOWER_ENEMY_DEFENSE = 14;
 const int32_t LOWER_ENEMY_SP_ATTACK = 15;
 const int32_t LOWER_ENEMY_SP_DEFENSE = 16;
 
-// status effects
-const int32_t BURN_STATUS = 1;
-const int32_t SLEEP_STATUS = 2;
-const int32_t CONFUSE_STATUS = 3;
-
 struct move {
     int32_t id;
     std::string name;
