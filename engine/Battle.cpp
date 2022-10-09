@@ -444,6 +444,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 message->showMessage(msg.append(getPimonData(enemyParty, 0).name).append("!"));
                 party.push_back(enemyParty.at(0));
                 caught = true;
+                caughtPimon[enemyParty.at(0).pimon_id-1] = true;
                 scene = END_BATTLE;
                 break; 
             case BATTLE_USE_GEM_FAILED:

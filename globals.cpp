@@ -21,6 +21,7 @@ int32_t patches = 0;
 int32_t gameTime = 0;
 std::vector<trainerPimon> party;
 int32_t currentMap = 1; // 1 == outside 0 == inside
+bool caughtPimon[] = { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
 
 //items
 int8_t potion = 3; // heal hp

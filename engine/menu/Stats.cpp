@@ -48,7 +48,11 @@ void Stats::draw(uint32_t tick) {
     text(str(patches), animX+10, 4 + (2 * 16) + 8);
 
     text("PiDex:" , animX+4, 4 + (3 * 16));
-    text(str(patches), animX+10, 4 + (3 * 16) + 8);
+    int32_t caughtCount = 0;
+    for (int32_t i; i < 24; i++) {
+        if (caughtPimon[i]) caughtCount++;
+    }
+    text(str(caughtCount), animX+10, 4 + (3 * 16) + 8);
 
     std::string gameTimeString = "";
     uint32_t cTime = gameTime + time();

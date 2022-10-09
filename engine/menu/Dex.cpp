@@ -80,6 +80,9 @@ void Dex::draw(uint32_t tick) {
     drawWindow(animX, 0, 60, 86);
 
     setPimonBuffer(dexOffset+dexIndex + 1);
+    if (caughtPimon[dexOffset+dexIndex]) {
+        text("c", 112, 4);
+    }
     draw56sprite(animX + 2, 2);
 
     for (int32_t i = 0; i < 3; i++) {
