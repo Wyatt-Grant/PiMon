@@ -395,6 +395,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                         msg = getPimonData(enemyParty, enemyPartyIndex).name;
                         message->showMessage(msg.append("\nhas fainted!"));
                         scene = BATTLE_WAIT_FOR_ENEMY_SWITCH;
+                        party.at(playerPartyIndex).xp += (enemyParty.at(enemyPartyIndex).xp * 5);
                     }
                 }
                 break;
@@ -466,6 +467,15 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 animPlayer = -56;
                 animEnemy = 120;
                 scene = BATTLE_INTRO_TEXT;
+
+                for (auto &tpimon : party) {
+                    if (xpToLvl(tpimon.xp) > 9 && (tpimon.pimon_id % 2 == 1)) { // if lvl 10 and haven't evolved
+                        tpimon.pimon_id += 1;
+                        msg = genericPimonData[tpimon.pimon_id - 1].name;
+                        msg.append("\nevolved!");
+                        message->showMessage(msg);
+                    }
+                }
                 break;
         }
     }

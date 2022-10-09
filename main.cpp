@@ -44,7 +44,7 @@ void init() {
     newGame = new NewGame();
     menu = new Menu();
 
-    party.push_back({ 1, 20, getMaxHp(1, xpToLvl(30)), 0 });
+    party.push_back({ 1, 1000, getMaxHp(1, xpToLvl(1000)), 0 });
     party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
     // party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
 
