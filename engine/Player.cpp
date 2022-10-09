@@ -31,7 +31,7 @@ bool Player::willActorsIntersect(Npc *npc, Direction d) {
     }
 }
 
-void Player::updateMovementAvailability(const int16_t colliders[][80], std::vector<Npc*> npcs) {
+void Player::updateMovementAvailability(const int16_t colliders[][160], std::vector<Npc*> npcs) {
     for (auto &npc : npcs) {
         if (willActorsIntersect(npc, down)) {
             canMoveDown = false;
@@ -88,7 +88,7 @@ void Player::handleTalkToNpcs(std::vector<Npc*> npcs, Message *message) {
     }
 }
 
-void Player::handleGrass(const int16_t colliders[][80]) {
+void Player::handleGrass(const int16_t colliders[][160]) {
     inGrass = false;
     if ((colliders[offsetTileY + 9][offsetTileX + 8] == 418)
      || (colliders[offsetTileY + 9][offsetTileX + 9] == 418)

@@ -7,7 +7,7 @@ Map::Map() {
     movingOffsetY = 0;
 }
 
-void Map::drawMapTile(const int16_t map[][80], int32_t x, int32_t y) {
+void Map::drawMapTile(const int16_t map[][160], int32_t x, int32_t y) {
     if (map[y+offsetTileY][x+offsetTileX] != -1) {
         int16_t tile = map[y+offsetTileY][x+offsetTileX];
         // flowers
@@ -27,7 +27,7 @@ void Map::drawMapTile(const int16_t map[][80], int32_t x, int32_t y) {
     }
 }
 
-void Map::drawMap(const int16_t below[][80], const int16_t above[][80]) {
+void Map::drawMap(const int16_t below[][160], const int16_t above[][160]) {
     for (int y = 0; y <= 17; y++) {
         for (int x = 0; x <= 17; x++) {
             if (!menuOpen) {
@@ -42,7 +42,7 @@ void Map::drawMap(const int16_t below[][80], const int16_t above[][80]) {
     }
 }
 
-void Map::drawAboveMap(const int16_t above[][80]) {
+void Map::drawAboveMap(const int16_t above[][160]) {
     for (int y = 0; y <= 5; y++) {
         for (int x = 0; x <= 5; x++) {
             if (above[offsetTileY + y + 5][offsetTileX + x + 5] != -1) {

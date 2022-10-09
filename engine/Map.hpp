@@ -15,9 +15,9 @@ class Map {
         int32_t movingOffsetX;
         int32_t movingOffsetY;
         
-        void drawMapTile(const int16_t map[][80], int32_t x, int32_t y);
-        void drawMap(const int16_t above[][80], const int16_t below[][80]);
-        void drawAboveMap(const int16_t above[][80]);
+        void drawMapTile(const int16_t map[][160], int32_t x, int32_t y);
+        void drawMap(const int16_t above[][160], const int16_t below[][160]);
+        void drawAboveMap(const int16_t above[][160]);
         
     public:
         Map();

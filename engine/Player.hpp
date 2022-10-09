@@ -25,8 +25,8 @@ class Player {
         bool canMoveRight;
 
         void handleMovement();
-        void updateMovementAvailability(const int16_t colliders[][80], std::vector<Npc*> npcs);
-        void handleGrass(const int16_t colliders[][80]);
+        void updateMovementAvailability(const int16_t colliders[][160], std::vector<Npc*> npcs);
+        void handleGrass(const int16_t colliders[][160]);
         bool willActorsIntersect(Npc *npc, Direction d);
         void setBuffer();
         void handleTalkToNpcs(std::vector<Npc*> npcs, Message *message);

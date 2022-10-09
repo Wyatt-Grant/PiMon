@@ -133,14 +133,14 @@ extern bool caughtPimon[];
 extern pimon genericPimonData[];
 
 //maps
-extern const int16_t town1_outside_colliders[80][80];
-extern const int16_t town1_outside_above[80][80];
-extern const int16_t town1_outside_below[80][80];
+extern const int16_t town1_outside_colliders[160][160];
+extern const int16_t town1_outside_above[160][160];
+extern const int16_t town1_outside_below[160][160];
 extern buffer_t *town_1_outside_tileset_buffer;
 
-extern const int16_t town1_inside_colliders[80][80];
-extern const int16_t town1_inside_above[80][80];
-extern const int16_t town1_inside_below[80][80];
+extern const int16_t town1_inside_colliders[160][160];
+extern const int16_t town1_inside_above[160][160];
+extern const int16_t town1_inside_below[160][160];
 extern buffer_t *town_1_inside_tileset_buffer;
 
 // helpers
