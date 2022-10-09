@@ -394,8 +394,6 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                         message->showMessage(msg);
                         scene = BATTLE_WAIT_FOR_PLAYER_DAMAGE;
                     }
-                } else if (party.at(playerPartyIndex).status == CONFUSED) {
-                    
                 } else {
                     msg = getPimonData(party, playerPartyIndex).name;
                     damage = calcDamage(party.at(playerPartyIndex), getPimonData(enemyParty, enemyPartyIndex), getPimonData(party, playerPartyIndex).moves.at(actionIndex));
@@ -443,8 +441,6 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                         enemyParty.at(enemyMoveIndex).status = NONE;
                         scene = BATTLE_WAIT_FOR_ENEMY_DAMAGE;
                     }
-                } else if (enemyParty.at(enemyPartyIndex).status == CONFUSED) {
-                    
                 } else {
                     msg = getPimonData(enemyParty, enemyPartyIndex).name;
                     enemyMoveIndex = rand() % ((xpToLvl(enemyParty.at(0).xp)/5) + 1);
@@ -481,8 +477,6 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                         message->showMessage(msg.append("\nmanaged to avoid\ngetting burned!"));
                     }
                     scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
-                } else if (getPimonData(party, playerPartyIndex).moves.at(actionIndex).effect_id == CONFUSION_ATTACK) {
-                    
                 } else {
                     if (damage == 0) {
                         scene = playerIsFirst ? BATTLE_WAIT_FOR_ENEMY_MOVE : BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
@@ -525,8 +519,6 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                         message->showMessage(msg.append("\nmanaged to avoid\ngetting burned!"));
                     }
                     scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
-                } else if (getPimonData(enemyParty, enemyPartyIndex).moves.at(enemyMoveIndex).effect_id == CONFUSION_ATTACK) {
-                    
                 } else {
                     if (damage == 0) {
                         scene = playerIsFirst ? BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT : BATTLE_WAIT_FOR_PLAYER_MOVE;
