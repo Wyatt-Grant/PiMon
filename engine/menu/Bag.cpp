@@ -21,6 +21,8 @@ void Bag::update(uint32_t tick, Message *message) {
         } else {
             if ((selected == 2 || selected == 3 || selected == 4) && !isWildBattle) { // cant catch non wild pimon
                 message->showMessage("This can only be\nused on wild PiMon...");
+            } else if ((selected == 2 || selected == 3 || selected == 4) && isWildBattle) { // cant catch non wild pimon
+                // [I actually use gems in battle class]
             } else {
                 partyMenu->waitForOpenAnimation = true;
                 partyMenu->animX = 120;
@@ -37,15 +39,6 @@ void Bag::update(uint32_t tick, Message *message) {
         if (selected == 1) { //elixer
             party.at(partyMenu->menuIndex).hp = getMaxHp(party.at(partyMenu->menuIndex).pimon_id, xpToLvl(party.at(partyMenu->menuIndex).xp));
             elixer -= 1;
-        }
-        if (selected == 2) { //ruby
-            ruby -= 1;
-        }
-        if (selected == 3) { //emerald
-            emerald -= 1;
-        }
-        if (selected == 4) { //diamond
-            diamond -= 1;
         }
         if (selected == 5) { //coffee
             if (party.at(partyMenu->menuIndex).status == SLEEPING) party.at(partyMenu->menuIndex).status = NONE;

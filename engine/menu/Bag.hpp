@@ -14,13 +14,13 @@ class Bag {
     private:
         int8_t menuIndex;
         int8_t counter;
-        int8_t selected;
 
     public:
         Party *partyMenu;
         bool closing;
         bool pressedBack;
         bool partyOpen;
+        int8_t selected;
 
         //anim
         int8_t animX;

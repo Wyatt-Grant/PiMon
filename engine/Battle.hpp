@@ -29,6 +29,8 @@ class Battle {
         int32_t damage;
         bool waitingForPartySwitch;
         int32_t switchToTarget;
+        bool caught;
+        bool gemLevel = 0;
 
         enum SCENE {
             BATTLE_INTRO_TEXT,
@@ -52,6 +54,10 @@ class Battle {
 
             BATTLE_OPEN_PARTY,
             BATTLE_OPEN_BAG,
+
+            BATTLE_USE_GEM,
+            BATTLE_USE_GEM_SUCCESS,
+            BATTLE_USE_GEM_FAILED,
 
             BATTLE_RUN_AWAY,
             BATTLE_WIN,

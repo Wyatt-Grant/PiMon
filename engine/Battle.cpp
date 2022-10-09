@@ -16,6 +16,8 @@ Battle::Battle() {
     animSwitched = false;
     waitingForPartySwitch = false;
     switchToTarget = 0;
+    caught = false;
+    gemLevel = 0;
 }
 
 void Battle::setNextPartyPimonIndex() {
@@ -281,6 +283,33 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 waitingForPartySwitch = true; //just prevents player from attacking after enemy, even if slower. should probably rename
                 scene = BATTLE_WAIT_FOR_ENEMY_MOVE;
             }
+            if (pressed(A) && (menu->bag->selected == 2 || menu->bag->selected == 3 || menu->bag->selected == 4) && isWildBattle) { // use gem
+                if (party.size() < 3) { // party not full
+                    if (menu->bag->selected == 2) { //emerald
+                        emerald -= 1;
+                        gemLevel = 1;
+                    }
+                    if (menu->bag->selected == 3) { //diamond
+                        diamond -= 1;
+                        gemLevel = 2;
+                    }
+                    if (menu->bag->selected == 4) { //ruby
+                        ruby -= 1;
+                        gemLevel = 0;
+                    }
+                    menu->bag->waitForOpenAnimation = false;
+                    menu->bag->waitForCloseAnimation = true;
+                    menu->bag->pressedBack = true;
+                    waitingForPartySwitch = true; //just prevents player from attacking after enemy, even if slower. should probably rename
+                    scene = BATTLE_USE_GEM;
+                } else {
+                    message->showMessage("party is full!");
+                    menu->bag->waitForOpenAnimation = false;
+                    menu->bag->waitForCloseAnimation = true;
+                    menu->bag->pressedBack = true;
+                    scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
+                }
+            }
             menu->bag->update(tick, message);
             break;
         default:
@@ -299,6 +328,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 } else {
                     scene = BATTLE_INTRO_ANIMATION;
                 }
+                caught = false;
                 break;
             case BATTLE_INTRO_ANIMATION:
                 message->showMessage("Trainer would like to\nbattle!");
@@ -403,6 +433,23 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                     scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
                 }
                 break;
+            case BATTLE_USE_GEM:
+                msg = "PLAYER used a\nPico Gem!";
+                message->showMessage(msg);
+                scene = ((rand() % (4 - gemLevel)) != 1) ? BATTLE_USE_GEM_FAILED : BATTLE_USE_GEM_SUCCESS;
+                break;
+            case BATTLE_USE_GEM_SUCCESS:
+                msg = "PLAYER caught\n";
+                message->showMessage(msg.append(getPimonData(enemyParty, 0).name).append("!"));
+                party.push_back(enemyParty.at(0));
+                caught = true;
+                scene = END_BATTLE;
+                break; 
+            case BATTLE_USE_GEM_FAILED:
+                msg = "Shoot!\nIt got away!";
+                message->showMessage(msg);
+                scene = BATTLE_WAIT_FOR_ENEMY_MOVE;
+                break; 
             case BATTLE_LOSE:
                 message->showMessage("you lose!");
                 scene = END_BATTLE;
@@ -443,6 +490,8 @@ void Battle::drawPlayerPartySprite(int32_t _x, int32_t _y) {
 void Battle::drawEnemyPartySprite(int32_t _x, int32_t _y) {
     setPimonBuffer(enemyParty.at(enemyPartyIndex).pimon_id);
 
+    if (caught) return;
+
     if (scene == BATTLE_WAIT_FOR_PLAYER_DAMAGE && !waiting){
         if (time() % 250 < 125) {
             draw56sprite(_x, _y);
@@ -451,7 +500,9 @@ void Battle::drawEnemyPartySprite(int32_t _x, int32_t _y) {
         if (scene == BATTLE_WAIT_FOR_ENEMY_MOVE) {
             draw56sprite(_x-8, _y);
         } else {
-            draw56sprite(_x, _y);
+            if (scene != BATTLE_USE_GEM_SUCCESS && scene != BATTLE_USE_GEM_FAILED) {
+                draw56sprite(_x, _y);
+            }
         }
     }
 }

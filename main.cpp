@@ -46,7 +46,7 @@ void init() {
 
     party.push_back({ 1, 20, getMaxHp(1, xpToLvl(30)), 0 });
     party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
-    party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
+    // party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
 
     // npc set up
     npcs.push_back(new Npc(84, 52, npc_1_overworld_buffer, npc_1_front_buffer, down));
