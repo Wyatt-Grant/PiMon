@@ -270,4 +270,7 @@ CMakeFiles/PiMon.dir/globals.cpp.obj: /Users/wyatt/Dev/PiMon/globals.cpp \
  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_colliders.cpp \
  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tilemap.cpp \
  /Users/wyatt/Dev/PiMon/maps/town1/outside/town1_outside_tileset.cpp \
+ /Users/wyatt/Dev/PiMon/maps/town1/inside/town1_inside_colliders.cpp \
+ /Users/wyatt/Dev/PiMon/maps/town1/inside/town1_inside_tilemap.cpp \
+ /Users/wyatt/Dev/PiMon/maps/town1/inside/town1_inside_tileset.cpp \
  /Users/wyatt/Dev/PiMon/PimonData.cpp

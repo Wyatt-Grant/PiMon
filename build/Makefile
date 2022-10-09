@@ -1723,6 +1723,30 @@ engine/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Player.cpp.s
 .PHONY : engine/Player.cpp.s
 
+engine/Teleporter.obj: engine/Teleporter.cpp.obj
+.PHONY : engine/Teleporter.obj
+
+# target to build an object file
+engine/Teleporter.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj
+.PHONY : engine/Teleporter.cpp.obj
+
+engine/Teleporter.i: engine/Teleporter.cpp.i
+.PHONY : engine/Teleporter.i
+
+# target to preprocess a source file
+engine/Teleporter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Teleporter.cpp.i
+.PHONY : engine/Teleporter.cpp.i
+
+engine/Teleporter.s: engine/Teleporter.cpp.s
+.PHONY : engine/Teleporter.s
+
+# target to generate assembly for a file
+engine/Teleporter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Teleporter.cpp.s
+.PHONY : engine/Teleporter.cpp.s
+
 engine/TitleScreen.obj: engine/TitleScreen.cpp.obj
 .PHONY : engine/TitleScreen.obj
 
@@ -2164,6 +2188,9 @@ help:
 	@echo "... engine/Player.obj"
 	@echo "... engine/Player.i"
 	@echo "... engine/Player.s"
+	@echo "... engine/Teleporter.obj"
+	@echo "... engine/Teleporter.i"
+	@echo "... engine/Teleporter.s"
 	@echo "... engine/TitleScreen.obj"
 	@echo "... engine/TitleScreen.i"
 	@echo "... engine/TitleScreen.s"

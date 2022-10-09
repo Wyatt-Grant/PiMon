@@ -162,6 +162,10 @@ void Player::update(uint32_t tick, int32_t mapNumber, std::vector<Npc*> npcs, Me
                 updateMovementAvailability(town1_outside_colliders, npcs);
                 handleGrass(town1_outside_colliders);
                 break;
+            case 0:
+                updateMovementAvailability(town1_inside_colliders, npcs);
+                handleGrass(town1_inside_colliders);
+                break;
         }
 
         handleMovement();

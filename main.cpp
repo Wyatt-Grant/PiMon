@@ -15,6 +15,7 @@
 #include "engine/TitleScreen.hpp"
 #include "engine/LoadGame.hpp"
 #include "engine/NewGame.hpp"
+#include "engine/Teleporter.hpp"
 #include "engine/menu/Menu.hpp"
 
 using namespace picosystem;
@@ -30,6 +31,7 @@ TitleScreen *titleScreen;
 LoadGame *loadGame;
 NewGame *newGame;
 Menu *menu;
+Teleporter *teleporter;
 
 void init() {
     blend(MASK);
@@ -43,6 +45,7 @@ void init() {
     loadGame = new LoadGame();
     newGame = new NewGame();
     menu = new Menu();
+    teleporter = new Teleporter();
 
     party.push_back({ 1, 1000, getMaxHp(1, xpToLvl(1000)), 0 });
     party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
@@ -90,9 +93,10 @@ void update(uint32_t tick) {
             break;
         case OVERWORLD:
             if (!menuOpen || forceDrawMap) {
-                player->update(tick, 1, npcs, message);
+                player->update(tick, currentMap, npcs, message);
                 map->update(tick);
                 for (auto &npc : npcs) npc->update(tick, 1);
+                teleporter->update(tick);
             }
             menu->update(tick, message);
             message->update(tick);
@@ -118,10 +122,11 @@ void draw(uint32_t tick) {
             break;
         case OVERWORLD:
             if (!menuOpen || forceDrawMap) {
-                map->draw(tick, 1);
+                map->draw(tick, currentMap);
                 player->draw(tick);
-                map->drawAbove(tick, 1);
+                map->drawAbove(tick, currentMap);
                 for (auto &npc : npcs) npc->draw(tick);
+                teleporter->draw(tick, player);
             }
             menu->draw(tick);
             message->draw(tick);

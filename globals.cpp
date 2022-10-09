@@ -6,6 +6,10 @@
 #include "maps/town1/outside/town1_outside_tilemap.cpp"
 #include "maps/town1/outside/town1_outside_tileset.cpp"
 
+#include "maps/town1/inside/town1_inside_colliders.cpp"
+#include "maps/town1/inside/town1_inside_tilemap.cpp"
+#include "maps/town1/inside/town1_inside_tileset.cpp"
+
 // stuff needed to save the game
 Point virtualCamera = {0, 0};
 std::string playerName = "Wyatt";
@@ -15,6 +19,8 @@ int32_t playerStarter = 1;
 int32_t cashMoney = 0;
 int32_t patches = 0;
 int32_t gameTime = 0;
+std::vector<trainerPimon> party;
+int32_t currentMap = 1; // 1 == outside 0 == inside
 
 //items
 int8_t potion = 3; // heal hp
@@ -42,7 +48,6 @@ int32_t transitionDone = false;
 buffer_t *enemyFront = NULL;
 bool menuOpen = false;
 bool forceDrawMap = false;
-std::vector<trainerPimon> party;
 std::vector<trainerPimon> enemyParty;
 bool isWildBattle = false;
 

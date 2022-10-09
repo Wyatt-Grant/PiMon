@@ -11,15 +11,17 @@ void Map::drawMapTile(const int16_t map[][80], int32_t x, int32_t y) {
     if (map[y+offsetTileY][x+offsetTileX] != -1) {
         int16_t tile = map[y+offsetTileY][x+offsetTileX];
         // flowers
-        if (time() % 2000 < 500) {
-            if (tile == 18) tile = 20;
-            if (tile == 19) tile = 21;
-        } else if (time() % 2000 < 1000) {
-            if (tile == 18) tile = 18;
-            if (tile == 19) tile = 19;
-        } else if (time() % 2000 < 1500) {
-            if (tile == 18) tile = 22;
-            if (tile == 19) tile = 23;
+        if (currentMap == 1) {
+            if (time() % 2000 < 500) {
+                if (tile == 18) tile = 20;
+                if (tile == 19) tile = 21;
+            } else if (time() % 2000 < 1000) {
+                if (tile == 18) tile = 18;
+                if (tile == 19) tile = 19;
+            } else if (time() % 2000 < 1500) {
+                if (tile == 18) tile = 22;
+                if (tile == 19) tile = 23;
+            }
         }
         sprite(tile, (x * 8) + movingOffsetX - 12, (y * 8) + movingOffsetY - 12);
     }
@@ -63,6 +65,10 @@ void Map::draw(uint32_t tick, int32_t mapNumber) {
             spritesheet(town_1_outside_tileset_buffer);
             drawMap(town1_outside_below, town1_outside_above);
             break;
+        case 0:
+            spritesheet(town_1_inside_tileset_buffer);
+            drawMap(town1_inside_below, town1_inside_above);
+            break;
     }
 }
 
@@ -71,6 +77,10 @@ void Map::drawAbove(uint32_t tick, int32_t mapNumber) {
         case 1:
             spritesheet(town_1_outside_tileset_buffer);
             drawAboveMap(town1_outside_above);
+            break;
+        case 0:
+            spritesheet(town_1_inside_tileset_buffer);
+            drawAboveMap(town1_inside_above);
             break;
     }
 }

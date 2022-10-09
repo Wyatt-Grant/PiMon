@@ -127,6 +127,7 @@ extern int8_t icePack;
 extern std::vector<trainerPimon> party;
 extern std::vector<trainerPimon> enemyParty;
 extern bool isWildBattle;
+extern int32_t currentMap;
 
 extern pimon genericPimonData[];
 
@@ -135,6 +136,11 @@ extern const int16_t town1_outside_colliders[80][80];
 extern const int16_t town1_outside_above[80][80];
 extern const int16_t town1_outside_below[80][80];
 extern buffer_t *town_1_outside_tileset_buffer;
+
+extern const int16_t town1_inside_colliders[80][80];
+extern const int16_t town1_inside_above[80][80];
+extern const int16_t town1_inside_below[80][80];
+extern buffer_t *town_1_inside_tileset_buffer;
 
 // helpers
 void drawWindow(uint32_t x, uint32_t y, uint32_t w, uint32_t h);

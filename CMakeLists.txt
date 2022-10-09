@@ -12,6 +12,7 @@ set(PROJECT_SOURCES
     engine/Message.cpp
     engine/Battle.cpp
     engine/TitleScreen.cpp
+    engine/Teleporter.cpp
     engine/LoadGame.cpp
     engine/NewGame.cpp
     engine/menu/Menu.cpp
