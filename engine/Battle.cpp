@@ -294,7 +294,11 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
             case BATTLE_INTRO_TEXT:
                 setNextEnemyPartyPimonIndex();
                 setNextPartyPimonIndex();
-                scene = BATTLE_INTRO_ANIMATION;
+                if (isWildBattle) {
+                    scene = BATTLE_PARTY_NAME_TEXT;
+                } else {
+                    scene = BATTLE_INTRO_ANIMATION;
+                }
                 break;
             case BATTLE_INTRO_ANIMATION:
                 message->showMessage("Trainer would like to\nbattle!");
@@ -534,7 +538,7 @@ void Battle::draw(uint32_t tick, Menu *menu) {
     drawWindow(0, 88, 120, 32);
 
     switch(scene) {
-        case BATTLE_INTRO_TEXT:
+        // case BATTLE_INTRO_TEXT:
         case BATTLE_INTRO_ANIMATION:
         case BATTLE_ENEMY_NAME_TEXT:
         case BATTLE_PARTY_NAME_TEXT:

@@ -166,6 +166,26 @@ void Player::update(uint32_t tick, int32_t mapNumber, std::vector<Npc*> npcs, Me
 
         handleMovement();
         handleTalkToNpcs(npcs, message);
+
+        // 10% chance to get in battle everytime you take a "step" in grass
+        srand(time() + virtualCamera.x);
+        if (inGrass && isMoving && isAligned && (rand() % 10 == 5)) {
+            changeSong = true;
+            MainScene = BATTLE;
+            transitionCounter = 0;
+            transitionDone = false;
+
+            int32_t wildLevel = (rand() % 2) + 1;
+            int32_t wildNum = (((rand() % 12) + 1) * 2) - 1;
+
+            isWildBattle = true;
+            enemyParty.clear();
+            enemyParty.push_back({ wildNum, 2, getMaxHp(wildNum, xpToLvl(2)), 0 });
+
+            virtualCamera.x = virtualCamera.x/16*16;
+            virtualCamera.y = virtualCamera.y/16*16;
+            isMoving = false;
+        }
     }
 }
 
