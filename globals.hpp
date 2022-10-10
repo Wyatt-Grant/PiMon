@@ -129,6 +129,7 @@ extern std::vector<trainerPimon> enemyParty;
 extern bool isWildBattle;
 extern int32_t currentMap;
 extern bool caughtPimon[];
+extern bool pickingStarter;
 
 extern pimon genericPimonData[];
 

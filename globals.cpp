@@ -12,10 +12,10 @@
 
 // stuff needed to save the game
 Point virtualCamera = {0, 0};
-std::string playerName = "Wyatt";
-std::string rivalName = "Bob";
+std::string playerName = "";
+std::string rivalName = "";
 int32_t playerAvatar = 1;
-int32_t playerStarter = 1;
+int32_t playerStarter = 1; // just for title screen
 int32_t cashMoney = 0;
 int32_t patches = 0;
 int32_t gameTime = 0;
@@ -51,6 +51,7 @@ bool menuOpen = false;
 bool forceDrawMap = false;
 std::vector<trainerPimon> enemyParty;
 bool isWildBattle = false;
+bool pickingStarter = false;
 
 #include "PimonData.cpp"
 

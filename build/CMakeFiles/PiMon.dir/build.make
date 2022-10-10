@@ -209,10 +209,24 @@ CMakeFiles/PiMon.dir/engine/NewGame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiMon.dir/engine/NewGame.cpp.s"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wyatt/Dev/PiMon/engine/NewGame.cpp -o CMakeFiles/PiMon.dir/engine/NewGame.cpp.s
 
+CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj: CMakeFiles/PiMon.dir/flags.make
+CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj: /Users/wyatt/Dev/PiMon/engine/StarterPicker.cpp
+CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj -MF CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/StarterPicker.cpp
+
+CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.i"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wyatt/Dev/PiMon/engine/StarterPicker.cpp > CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.i
+
+CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.s"
+	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wyatt/Dev/PiMon/engine/StarterPicker.cpp -o CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.s
+
 CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Menu.cpp
 CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/Menu.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Dex.cpp
 CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/Dex.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/TownMap.cpp
 CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/TownMap.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Bag.cpp
 CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/Bag.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Party.cpp
 CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/Party.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/Party.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/Party.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/PiMon.dir/engine/menu/Party.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Settings.cpp
 CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/Settings.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/PiMon.dir/engine/menu/Settings.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj: /Users/wyatt/Dev/PiMon/engine/menu/Stats.cpp
 CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj -MF CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj.d -o CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.obj -c /Users/wyatt/Dev/PiMon/engine/menu/Stats.cpp
 
 CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/PiMon.dir/engine/menu/Stats.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/globals.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/globals.cpp.obj: /Users/wyatt/Dev/PiMon/globals.cpp
 CMakeFiles/PiMon.dir/globals.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PiMon.dir/globals.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PiMon.dir/globals.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/globals.cpp.obj -MF CMakeFiles/PiMon.dir/globals.cpp.obj.d -o CMakeFiles/PiMon.dir/globals.cpp.obj -c /Users/wyatt/Dev/PiMon/globals.cpp
 
 CMakeFiles/PiMon.dir/globals.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/PiMon.dir/globals.cpp.s: cmake_force
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/picosystem.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/picosystem.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.i: cmake_force
@@ -338,7 +352,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/picosystem.cpp.s: cmak
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/blend.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/blend.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/blend.cpp.s: cmake_for
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/audio.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/audio.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.i: cmake_force
@@ -366,7 +380,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/audio.cpp.s: cmake_for
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/state.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/state.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.i: cmake_force
@@ -380,7 +394,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/state.cpp.s: cmake_for
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/primitives.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/primitives.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.i: cmake_force
@@ -394,7 +408,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/primitives.cpp.s: cmak
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/text.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/text.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.i: cmake_force
@@ -408,7 +422,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/text.cpp.s: cmake_forc
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/utility.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/utility.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.i: cmake_force
@@ -422,7 +436,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/utility.cpp.s: cmake_f
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/hardware.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/hardware.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.i: cmake_force
@@ -436,7 +450,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/hardware.cpp.s: cmake_
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj: /Users/wyatt/Dev/picosystem/libraries/assets.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.obj -c /Users/wyatt/Dev/picosystem/libraries/assets.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.i: cmake_force
@@ -450,7 +464,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/picosystem/libraries/assets.cpp.s: cmake_fo
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -464,7 +478,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdlib/stdlib.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -478,7 +492,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_gpio/gpio.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -492,7 +506,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_claim/clai
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -506,7 +520,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_platform/platf
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -520,7 +534,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_sync/sync.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -533,7 +547,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq.c.
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -547,7 +561,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_irq/irq_ha
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -561,7 +575,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/sem.c.s: cmak
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -575,7 +589,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/lock_core.c.s
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -589,7 +603,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/time.c.s: cma
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -603,7 +617,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_time/timeout_helpe
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -617,7 +631,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_timer/time
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -631,7 +645,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/datetime.c.s:
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -645,7 +659,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/pheap.c.s: cm
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -659,7 +673,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_util/queue.c.s: cm
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -673,7 +687,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/mutex.c.s: cm
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj: /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -687,7 +701,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/common/pico_sync/critical_sect
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -700,7 +714,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_uart/uart.
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -714,7 +728,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_divider/di
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -728,7 +742,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_runtime/runtim
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -742,7 +756,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_clocks/clo
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -756,7 +770,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pll/pll.c.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -770,7 +784,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_vreg/vreg.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -784,7 +798,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_watchdog/w
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -798,7 +812,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_xosc/xosc.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -811,7 +825,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_printf/printf.
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -825,7 +839,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bit_ops/bit_op
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -838,7 +852,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_bootrom/bootro
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -851,7 +865,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_divider/divide
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -865,7 +879,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -879,7 +893,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -892,7 +906,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -905,7 +919,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_double/double_
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -918,7 +932,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_int64_ops/pico
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -932,7 +946,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_ae
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -946,7 +960,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_in
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -959,7 +973,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_ma
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -973,7 +987,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_float/float_v1
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -986,7 +1000,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_malloc/pico_ma
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -999,7 +1013,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_mem_ops/mem_op
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building ASM object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -1013,7 +1027,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/opt/homebrew/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -1027,7 +1041,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -1041,7 +1055,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_standard_link/
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -1055,7 +1069,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio/stdio.c.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -1069,7 +1083,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_stdio_uart/std
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.i: cmake_force
@@ -1083,7 +1097,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_pio/pio.c.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.i: cmake_force
@@ -1097,7 +1111,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_spi/spi.c.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.i: cmake_force
@@ -1111,7 +1125,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_dma/dma.c.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.i: cmake_force
@@ -1125,7 +1139,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_adc/adc.c.
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/interp.c.i: cmake_force
@@ -1139,7 +1153,7 @@ CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/hardware_interp/int
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/PiMon.dir/flags.make
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/PiMon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 	/opt/homebrew/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d -o CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -c /Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 
 CMakeFiles/PiMon.dir/Users/wyatt/Dev/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1162,6 +1176,7 @@ PiMon_OBJECTS = \
 "CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj" \
 "CMakeFiles/PiMon.dir/engine/LoadGame.cpp.obj" \
 "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj" \
+"CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj" \
 "CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj" \
 "CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj" \
 "CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj" \
@@ -1244,6 +1259,7 @@ PiMon.elf: CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj
 PiMon.elf: CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj
 PiMon.elf: CMakeFiles/PiMon.dir/engine/LoadGame.cpp.obj
 PiMon.elf: CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj
+PiMon.elf: CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj
 PiMon.elf: CMakeFiles/PiMon.dir/engine/menu/Menu.cpp.obj
 PiMon.elf: CMakeFiles/PiMon.dir/engine/menu/Dex.cpp.obj
 PiMon.elf: CMakeFiles/PiMon.dir/engine/menu/TownMap.cpp.obj
@@ -1316,7 +1332,7 @@ PiMon.elf: CMakeFiles/PiMon.dir/build.make
 PiMon.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 PiMon.elf: /Users/wyatt/Dev/picosystem/libraries/memmap_picosystem.ld
 PiMon.elf: CMakeFiles/PiMon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Linking CXX executable PiMon.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wyatt/Dev/PiMon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Linking CXX executable PiMon.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PiMon.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/arm-none-eabi-objcopy -Oihex /Users/wyatt/Dev/PiMon/build/PiMon.elf PiMon.hex
 	/opt/homebrew/bin/arm-none-eabi-objcopy -Obinary /Users/wyatt/Dev/PiMon/build/PiMon.elf PiMon.bin

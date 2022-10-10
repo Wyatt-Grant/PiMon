@@ -174,6 +174,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/wyatt/Dev/PiMon/engine/NewGame.cpp" "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/NewGame.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Npc.cpp" "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Player.cpp" "CMakeFiles/PiMon.dir/engine/Player.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Player.cpp.obj.d"
+  "/Users/wyatt/Dev/PiMon/engine/StarterPicker.cpp" "CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/Teleporter.cpp" "CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/TitleScreen.cpp" "CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj.d"
   "/Users/wyatt/Dev/PiMon/engine/menu/Bag.cpp" "CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj" "gcc" "CMakeFiles/PiMon.dir/engine/menu/Bag.cpp.obj.d"

@@ -122,6 +122,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PiMon.dir/engine/Npc.cpp.obj.d"
   "CMakeFiles/PiMon.dir/engine/Player.cpp.obj"
   "CMakeFiles/PiMon.dir/engine/Player.cpp.obj.d"
+  "CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj"
+  "CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj.d"
   "CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj"
   "CMakeFiles/PiMon.dir/engine/Teleporter.cpp.obj.d"
   "CMakeFiles/PiMon.dir/engine/TitleScreen.cpp.obj"

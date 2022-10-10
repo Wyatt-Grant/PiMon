@@ -304,4 +304,5 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
  /Users/wyatt/Dev/PiMon/engine/TitleScreen.hpp \
  /Users/wyatt/Dev/PiMon/engine/LoadGame.hpp \
  /Users/wyatt/Dev/PiMon/engine/NewGame.hpp \
- /Users/wyatt/Dev/PiMon/engine/Teleporter.hpp
+ /Users/wyatt/Dev/PiMon/engine/Teleporter.hpp \
+ /Users/wyatt/Dev/PiMon/engine/StarterPicker.hpp

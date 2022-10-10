@@ -16,6 +16,7 @@
 #include "engine/LoadGame.hpp"
 #include "engine/NewGame.hpp"
 #include "engine/Teleporter.hpp"
+#include "engine/StarterPicker.hpp"
 #include "engine/menu/Menu.hpp"
 
 using namespace picosystem;
@@ -32,6 +33,7 @@ LoadGame *loadGame;
 NewGame *newGame;
 Menu *menu;
 Teleporter *teleporter;
+StarterPicker *starterPicker;
 
 void init() {
     blend(MASK);
@@ -49,8 +51,9 @@ void init() {
     newGame = new NewGame();
     menu = new Menu();
     teleporter = new Teleporter();
+    starterPicker = new StarterPicker();
 
-    party.push_back({ 9, 10, getMaxHp(9, xpToLvl(10)), 0 });
+    // party.push_back({ 9, 10, getMaxHp(9, xpToLvl(10)), 0 });
     // party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
     // party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
 
@@ -138,7 +141,11 @@ void init() {
     npcs.at(16)->addMessage({ "Hey Dweeb", 0, []() -> void { return; } });
 
     npcs.push_back(new Npc(180, 436, npc_1_overworld_buffer, npc_1_front_buffer, up, true, 0));
-    npcs.at(17)->addMessage({ "Hey PLAYER, which\npimon do you want?", 0, []() -> void { return; } });
+    npcs.at(17)->addMessage({ "Hey PLAYER, which\npimon do you want?", 0, []() -> void {
+        pickingStarter = true;
+        starterPicker->waitForOpenAnimation = true;
+        starterPicker->animX = 120;
+    } });
 
     //town 2 outside
     npcs.push_back(new Npc(116, 644, npc_9_overworld_buffer, npc_9_front_buffer, up, true, 0));
@@ -184,7 +191,7 @@ void update(uint32_t tick) {
             message->update(tick);
             break;
         case OVERWORLD:
-            if (!menuOpen || forceDrawMap) {
+            if ((!menuOpen && !pickingStarter) || forceDrawMap) {
                 player->update(tick, currentMap, npcs, message);
                 map->update(tick);
                 for (auto &npc : npcs) {
@@ -192,6 +199,7 @@ void update(uint32_t tick) {
                 }
                 teleporter->update(tick);
             }
+            if(pickingStarter || starterPicker->waitForCloseAnimation || starterPicker->waitForOpenAnimation) starterPicker->update(tick, npcs);
             menu->update(tick, message);
             message->update(tick);
             break;
@@ -215,7 +223,7 @@ void draw(uint32_t tick) {
             message->draw(tick);
             break;
         case OVERWORLD:
-            if (!menuOpen || forceDrawMap) {
+            if ((!menuOpen && !pickingStarter) || forceDrawMap) {
                 map->draw(tick, currentMap);
                 player->draw(tick);
                 map->drawAbove(tick, currentMap);
@@ -224,6 +232,7 @@ void draw(uint32_t tick) {
                 }
                 teleporter->draw(tick, player);
             }
+            if(pickingStarter || starterPicker->waitForCloseAnimation || starterPicker->waitForOpenAnimation) starterPicker->draw(tick);
             menu->draw(tick);
             message->draw(tick);
             break;
@@ -235,11 +244,11 @@ void draw(uint32_t tick) {
             break;
     }
 
-    pen(15,15,15);
-    frect(0,112,120,9);
-    pen(0,0,0);
-    // text(str((virtualCamera.x - 52) * -1), 0, 112);
-    // text(str((virtualCamera.y - 52) * -1), 60, 112);
-    text(str(virtualCamera.x), 0, 112);
-    text(str(virtualCamera.y), 60, 112);
+    // pen(15,15,15);
+    // frect(0,112,120,9);
+    // pen(0,0,0);
+    // // text(str((virtualCamera.x - 52) * -1), 0, 112);
+    // // text(str((virtualCamera.y - 52) * -1), 60, 112);
+    // text(str(virtualCamera.x), 0, 112);
+    // text(str(virtualCamera.y), 60, 112);
 }

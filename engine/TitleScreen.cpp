@@ -98,7 +98,7 @@ void TitleScreen::draw(uint32_t tick) {
         if (time() % 1000 < 500 && logoY == 2) {
             text("Press any button", 20, 112);   
         }
-        text("v0.2", 100, 56);
+        text("v0.5", 100, 56);
 
         drawLogoMonster(16, 56);
         drawLogoCharacter(50, 56);

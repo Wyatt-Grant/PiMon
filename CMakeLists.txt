@@ -15,6 +15,7 @@ set(PROJECT_SOURCES
     engine/Teleporter.cpp
     engine/LoadGame.cpp
     engine/NewGame.cpp
+    engine/StarterPicker.cpp
     engine/menu/Menu.cpp
     engine/menu/Dex.cpp
     engine/menu/TownMap.cpp

@@ -1723,6 +1723,30 @@ engine/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/Player.cpp.s
 .PHONY : engine/Player.cpp.s
 
+engine/StarterPicker.obj: engine/StarterPicker.cpp.obj
+.PHONY : engine/StarterPicker.obj
+
+# target to build an object file
+engine/StarterPicker.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.obj
+.PHONY : engine/StarterPicker.cpp.obj
+
+engine/StarterPicker.i: engine/StarterPicker.cpp.i
+.PHONY : engine/StarterPicker.i
+
+# target to preprocess a source file
+engine/StarterPicker.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.i
+.PHONY : engine/StarterPicker.cpp.i
+
+engine/StarterPicker.s: engine/StarterPicker.cpp.s
+.PHONY : engine/StarterPicker.s
+
+# target to generate assembly for a file
+engine/StarterPicker.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PiMon.dir/build.make CMakeFiles/PiMon.dir/engine/StarterPicker.cpp.s
+.PHONY : engine/StarterPicker.cpp.s
+
 engine/Teleporter.obj: engine/Teleporter.cpp.obj
 .PHONY : engine/Teleporter.obj
 
@@ -2188,6 +2212,9 @@ help:
 	@echo "... engine/Player.obj"
 	@echo "... engine/Player.i"
 	@echo "... engine/Player.s"
+	@echo "... engine/StarterPicker.obj"
+	@echo "... engine/StarterPicker.i"
+	@echo "... engine/StarterPicker.s"
 	@echo "... engine/Teleporter.obj"
 	@echo "... engine/Teleporter.i"
 	@echo "... engine/Teleporter.s"
