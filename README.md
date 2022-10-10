@@ -3,8 +3,11 @@ A monster catching game.
 
 # Controls
 D-Pad: move
+
 a: interact
+
 b: back
+
 x: menu
 
 the rest are available in game
