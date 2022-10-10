@@ -1,1 +1,4 @@
 build/
+.vs-code/
+.github/
+.DS_Store
