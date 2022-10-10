@@ -14,6 +14,7 @@ class Npc {
         int32_t offsetTileY;
         bool inGrass;
         int32_t avatar;
+        bool visible;
 
         void setBuffer();
         void ppSprite(int32_t spriteOffset, int32_t posX, int32_t posY);
@@ -24,8 +25,9 @@ class Npc {
         std::vector<Text> messages;
         buffer_t *buffer;
         buffer_t *frontBuffer;
+        int32_t map;
 
-        Npc(int32_t x, int32_t y, buffer_t *b, buffer_t *b2, Direction d);
+        Npc(int32_t x, int32_t y, buffer_t *b, buffer_t *b2, Direction d, bool v, int32_t m);
         void draw(uint32_t tick);
         void update(uint32_t tick, int32_t mapNumber);
         void addMessage(Text msg);

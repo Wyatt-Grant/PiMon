@@ -17,7 +17,6 @@ class Player {
         int32_t movingOffsetX;
         int32_t movingOffsetY;
         bool isAligned;
-        bool inGrass;
         bool isMoving;
         bool canMoveDown;
         bool canMoveUp;
@@ -34,6 +33,7 @@ class Player {
     public:
         Point position;
         Direction direction;
+        bool inGrass;
 
         Player(int32_t x, int32_t y);
         void draw(uint32_t tick);

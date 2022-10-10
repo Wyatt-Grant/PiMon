@@ -20,18 +20,18 @@ int32_t cashMoney = 0;
 int32_t patches = 0;
 int32_t gameTime = 0;
 std::vector<trainerPimon> party;
-int32_t currentMap = 1; // 1 == outside 0 == inside
+int32_t currentMap = 0; // 1 == outside 0 == inside
 bool caughtPimon[] = { false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false };
 
 //items
 int8_t potion = 3; // heal hp
-int8_t elixer = 1; // heal hp
-int8_t ruby = 6; // catching
-int8_t emerald = 1; // catching
-int8_t diamond = 0; // catching
-int8_t coffee = 1;// heal sleep
-int8_t cure = 2; // heal poison
-int8_t icePack = 0; // heal burn & bruise
+int8_t elixer = 3; // heal hp
+int8_t ruby = 3; // catching
+int8_t emerald = 3; // catching
+int8_t diamond = 3; // catching
+int8_t coffee = 3;// heal sleep
+int8_t cure = 0; // heal poison
+int8_t icePack = 3; // heal burn & bruise
 
 //settings menu
 int8_t volume = 100;

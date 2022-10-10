@@ -3846,6 +3846,8 @@ CMakeFiles/PiMon.dir/engine/Battle.cpp.obj: /Users/wyatt/Dev/PiMon/engine/Battle
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex.tcc \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.h \
   /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_executor.tcc \
+  /Users/wyatt/Dev/PiMon/engine/Player.hpp \
+  /Users/wyatt/Dev/PiMon/engine/Npc.hpp \
   /Users/wyatt/Dev/PiMon/engine/menu/Menu.hpp \
   /Users/wyatt/Dev/PiMon/engine/menu/Bag.hpp \
   /Users/wyatt/Dev/PiMon/engine/menu/Party.hpp \
@@ -7882,8 +7884,6 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
 
 /Users/wyatt/Dev/PiMon/engine/Teleporter.cpp:
 
-/Users/wyatt/Dev/PiMon/engine/Npc.hpp:
-
 /Users/wyatt/Dev/PiMon/engine/Map.hpp:
 
 /Users/wyatt/Dev/PiMon/sprites/pimon_back/9.cpp:
@@ -7901,6 +7901,8 @@ CMakeFiles/PiMon.dir/main.cpp.obj: /Users/wyatt/Dev/PiMon/main.cpp \
 /Users/wyatt/Dev/PiMon/engine/menu/Party.hpp:
 
 /Users/wyatt/Dev/PiMon/engine/menu/Bag.hpp:
+
+/Users/wyatt/Dev/PiMon/engine/Npc.hpp:
 
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.07/gcc/arm-none-eabi/include/c++/10.3.1/bits/regex_compiler.tcc:
 

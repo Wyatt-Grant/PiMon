@@ -33,56 +33,65 @@ bool Player::willActorsIntersect(Npc *npc, Direction d) {
 
 void Player::updateMovementAvailability(const int16_t colliders[][160], std::vector<Npc*> npcs) {
     for (auto &npc : npcs) {
-        if (willActorsIntersect(npc, down)) {
-            canMoveDown = false;
-        }
-        if (willActorsIntersect(npc, up)) {
-            canMoveUp = false;
-        }
-        if (willActorsIntersect(npc, left)) {
-            canMoveLeft = false;
-        }
-        if (willActorsIntersect(npc, right)) {
-            canMoveRight = false;
+        if (npc->map == currentMap) {
+            if (willActorsIntersect(npc, down)) {
+                canMoveDown = false;
+            }
+            if (willActorsIntersect(npc, up)) {
+                canMoveUp = false;
+            }
+            if (willActorsIntersect(npc, left)) {
+                canMoveLeft = false;
+            }
+            if (willActorsIntersect(npc, right)) {
+                canMoveRight = false;
+            }
         }
     }
 
-    if (colliders[offsetTileY + 10][offsetTileX + 8] == 419) {
+    int32_t CollideTile = currentMap == 1 ? 419 : 0;
+    if (colliders[offsetTileY + 10][offsetTileX + 8] == CollideTile) {
         canMoveDown = false;
     }
-    if (colliders[offsetTileY + 6][offsetTileX + 8] == 419) {
+    if (colliders[offsetTileY + 6][offsetTileX + 8] == CollideTile) {
         canMoveUp = false;
     }
-    if (colliders[offsetTileY + 8][offsetTileX + 6] == 419) {
+    if (colliders[offsetTileY + 8][offsetTileX + 6] == CollideTile) {
         canMoveLeft = false;
     }
-    if (colliders[offsetTileY + 8][offsetTileX + 10] == 419) {
+    if (colliders[offsetTileY + 8][offsetTileX + 10] == CollideTile) {
+        canMoveRight = false;
+    }
+
+    if (party.size() == 0 && currentMap == 1 && virtualCamera.x <= -288) {
         canMoveRight = false;
     }
 }
 
 void Player::handleTalkToNpcs(std::vector<Npc*> npcs, Message *message) {
     for (auto &npc : npcs) {
-        if (pressed(A) && isAligned) {
-            if (willActorsIntersect(npc, down) && direction == down) {
-                message->showMessages(npc->messages);
-                enemyFront = npc->frontBuffer;
-                npc->direction = up;
-            }
-            if (willActorsIntersect(npc, up) && direction == up) {
-                message->showMessages(npc->messages);
-                enemyFront = npc->frontBuffer;
-                npc->direction = down;
-            }
-            if (willActorsIntersect(npc, left) && direction == left) {
-                message->showMessages(npc->messages);
-                enemyFront = npc->frontBuffer;
-                npc->direction = right;
-            }
-            if (willActorsIntersect(npc, right) && direction == right) {
-                message->showMessages(npc->messages);
-                enemyFront = npc->frontBuffer;
-                npc->direction = left;
+        if (npc->map == currentMap) {
+            if (pressed(A) && isAligned) {
+                if (willActorsIntersect(npc, down) && direction == down) {
+                    message->showMessages(npc->messages);
+                    enemyFront = npc->frontBuffer;
+                    npc->direction = up;
+                }
+                if (willActorsIntersect(npc, up) && direction == up) {
+                    message->showMessages(npc->messages);
+                    enemyFront = npc->frontBuffer;
+                    npc->direction = down;
+                }
+                if (willActorsIntersect(npc, left) && direction == left) {
+                    message->showMessages(npc->messages);
+                    enemyFront = npc->frontBuffer;
+                    npc->direction = right;
+                }
+                if (willActorsIntersect(npc, right) && direction == right) {
+                    message->showMessages(npc->messages);
+                    enemyFront = npc->frontBuffer;
+                    npc->direction = left;
+                }
             }
         }
     }
@@ -164,7 +173,7 @@ void Player::update(uint32_t tick, int32_t mapNumber, std::vector<Npc*> npcs, Me
                 break;
             case 0:
                 updateMovementAvailability(town1_inside_colliders, npcs);
-                handleGrass(town1_inside_colliders);
+                // handleGrass(town1_inside_colliders);
                 break;
         }
 

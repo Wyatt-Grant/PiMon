@@ -10,7 +10,7 @@ Menu::Menu() {
     bag = new Bag();
     dex = new Dex();
     townMap = new TownMap();
-    party = new Party();
+    partyMenu = new Party();
     settings = new Settings();
     stats = new Stats();
 }
@@ -34,9 +34,13 @@ void Menu::updateBase(uint32_t tick, Message *message) {
                 scene = MENU_DEX;
                 break;
             case 1:
-                party->waitForOpenAnimation = true;
-                party->animX = 120;
-                scene = MENU_PARTY;
+                if (party.size() > 0) {
+                    partyMenu->waitForOpenAnimation = true;
+                    partyMenu->animX = 120;
+                    scene = MENU_PARTY;
+                } else {
+                    message->showMessage("You don't have any\nPiMon!");
+                }
                 break;
             case 2:
                 bag->waitForOpenAnimation = true;
@@ -130,7 +134,7 @@ void Menu::handleOpenClose() {
     || (stats->closing && scene == MENU_STATS)
     || (townMap->closing && scene == MENU_MAP)
     || (dex->closing && scene == MENU_DEX)
-    || (party->closing && scene == MENU_PARTY)
+    || (partyMenu->closing && scene == MENU_PARTY)
     || (bag->closing && scene == MENU_BAG)) {
         scene = MENU_BASE;
         waitForOpenAnimation = true;
@@ -148,7 +152,7 @@ void Menu::update(uint32_t tick, Message *message) {
                 if (stats->waitForCloseAnimation || stats->waitForOpenAnimation) stats->update(tick);
                 if (townMap->waitForCloseAnimation || townMap->waitForOpenAnimation) townMap->update(tick);
                 if (dex->waitForCloseAnimation || dex->waitForOpenAnimation) dex->update(tick);
-                if (party->waitForCloseAnimation || party->waitForOpenAnimation) party->update(tick);
+                if (partyMenu->waitForCloseAnimation || partyMenu->waitForOpenAnimation) partyMenu->update(tick);
                 if (bag->waitForCloseAnimation || bag->waitForOpenAnimation) bag->update(tick, message);
                 break;
             case MENU_BAG:
@@ -164,7 +168,7 @@ void Menu::update(uint32_t tick, Message *message) {
                 dex->update(tick);
                 break;
             case MENU_PARTY:
-                party->update(tick);
+                partyMenu->update(tick);
                 break;
             case MENU_SAVE:
                 break;
@@ -186,7 +190,7 @@ void Menu::draw(uint32_t tick) {
                 if (stats->waitForCloseAnimation || stats->waitForOpenAnimation) stats->draw(tick);
                 if (townMap->waitForCloseAnimation || townMap->waitForOpenAnimation) townMap->draw(tick);
                 if (dex->waitForCloseAnimation || dex->waitForOpenAnimation) dex->draw(tick);
-                if (party->waitForCloseAnimation || party->waitForOpenAnimation) party->draw(tick);
+                if (partyMenu->waitForCloseAnimation || partyMenu->waitForOpenAnimation) partyMenu->draw(tick);
                 if (bag->waitForCloseAnimation || bag->waitForOpenAnimation) bag->draw(tick);
                 break;
             case MENU_BAG:
@@ -207,7 +211,7 @@ void Menu::draw(uint32_t tick) {
                 break;
             case MENU_PARTY:
                 if (waitForCloseAnimation || waitForOpenAnimation) drawBase(tick);
-                party->draw(tick);
+                partyMenu->draw(tick);
                 break;
             case MENU_SAVE:
                 break;

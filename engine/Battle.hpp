@@ -6,6 +6,7 @@
 #include "types.hpp"
 #include "globals.hpp"
 #include "engine/Message.hpp"
+#include "engine/Player.hpp"
 #include "engine/menu/Menu.hpp"
 
 using namespace picosystem;
@@ -90,5 +91,5 @@ class Battle {
     public:
         Battle();
         void draw(uint32_t tick, Menu *menu);
-        void update(uint32_t tick, Message *message, Menu *menu);
+        void update(uint32_t tick, Message *message, Menu *menu, Player *player);
 };

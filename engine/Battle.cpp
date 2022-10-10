@@ -145,8 +145,8 @@ void Battle::handlePlayerSelectActionInput(Menu *menu) {
                 break;
             case 2:
                 scene = BATTLE_OPEN_PARTY;
-                menu->party->waitForOpenAnimation = true;
-                menu->party->animX = 120;
+                menu->partyMenu->waitForOpenAnimation = true;
+                menu->partyMenu->animX = 120;
                 break;
             case 3:
                 scene = BATTLE_RUN_AWAY;
@@ -198,7 +198,7 @@ void Battle::handlePlayerSelectMoveInput() {
     }
 }
 
-void Battle::update(uint32_t tick, Message *message, Menu *menu) {
+void Battle::update(uint32_t tick, Message *message, Menu *menu, Player *player) {
     std::string msg = "";
 
     // slide animations don't respect the waiting flag
@@ -222,7 +222,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
             } else {
                 slideOutPlayer();
             }
-            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->update(tick);
+            if (menu->partyMenu->waitForCloseAnimation || menu->partyMenu->waitForOpenAnimation) menu->partyMenu->update(tick);
             if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->update(tick, message);
             break;
         case BATTLE_WAIT_FOR_ENEMY_SWITCH:
@@ -237,9 +237,9 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                 scene = BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT;
             }
             if (pressed(A)) {
-                if (party.at(menu->party->menuIndex).hp > 0 && menu->party->menuIndex != playerPartyIndex) {
-                    menu->party->close();
-                    switchToTarget = menu->party->menuIndex;
+                if (party.at(menu->partyMenu->menuIndex).hp > 0 && menu->partyMenu->menuIndex != playerPartyIndex) {
+                    menu->partyMenu->close();
+                    switchToTarget = menu->partyMenu->menuIndex;
                     message->showMessage("go some guy!");
                     waitingForPartySwitch = true;
                 }
@@ -259,7 +259,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
                     scene = BATTLE_WAIT_FOR_ENEMY_MOVE;
                 }
             }
-            menu->party->update(tick);
+            menu->partyMenu->update(tick);
             break;
         case BATTLE_OPEN_BAG:
             if (pressed(B) && !menu->bag->partyOpen) {
@@ -302,7 +302,7 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
             menu->bag->update(tick, message);
             break;
         default:
-            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->update(tick);
+            if (menu->partyMenu->waitForCloseAnimation || menu->partyMenu->waitForOpenAnimation) menu->partyMenu->update(tick);
             if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->update(tick, message);
             break;
     }
@@ -576,6 +576,12 @@ void Battle::update(uint32_t tick, Message *message, Menu *menu) {
             case BATTLE_LOSE:
                 message->showMessage("you lose!");
                 scene = END_BATTLE;
+                for (auto &tpimon : party) {
+                    tpimon.hp = getMaxHp(tpimon.pimon_id, xpToLvl(tpimon.xp));
+                }
+                currentMap = 0;
+                virtualCamera = {-240, -208};
+                player->inGrass = false;
                 break;
             case BATTLE_WIN:
                 message->showMessage("you win!");
@@ -745,13 +751,13 @@ void Battle::draw(uint32_t tick, Menu *menu) {
         case BATTLE_WAIT_FOR_PLAYER_ACTION_INPUT:
             drawMainView();
             drawActions();
-            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
+            if (menu->partyMenu->waitForCloseAnimation || menu->partyMenu->waitForOpenAnimation) menu->partyMenu->draw(tick);
             if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->draw(tick);
             break;
         case BATTLE_WAIT_FOR_PLAYER_MOVE_INPUT:
             drawMainView();
             drawMoves();
-            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
+            if (menu->partyMenu->waitForCloseAnimation || menu->partyMenu->waitForOpenAnimation) menu->partyMenu->draw(tick);
             if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->draw(tick);
             break;
         // case BATTLE_RUN_AWAY:
@@ -761,7 +767,7 @@ void Battle::draw(uint32_t tick, Menu *menu) {
         case BATTLE_OPEN_PARTY:
             drawMainView();
             drawActions();
-            menu->party->draw(tick);
+            menu->partyMenu->draw(tick);
             break;
         case BATTLE_OPEN_BAG:
             drawMainView();
@@ -770,7 +776,7 @@ void Battle::draw(uint32_t tick, Menu *menu) {
             break;
         default:
             drawMainView();
-            if (menu->party->waitForCloseAnimation || menu->party->waitForOpenAnimation) menu->party->draw(tick);
+            if (menu->partyMenu->waitForCloseAnimation || menu->partyMenu->waitForOpenAnimation) menu->partyMenu->draw(tick);
             if (menu->bag->waitForCloseAnimation || menu->bag->waitForOpenAnimation) menu->bag->draw(tick);
             break;
     }

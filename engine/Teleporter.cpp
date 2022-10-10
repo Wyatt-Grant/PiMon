@@ -56,6 +56,38 @@ void Teleporter::update(uint32_t tick) {
     if(virtualCamera.x == -32 && virtualCamera.y == -464 && currentMap == 0) {
         teleport(1, -176, -162, down);
     }
+
+    //second town house 1
+    if(virtualCamera.x == -48 && virtualCamera.y == -928 && currentMap == 1) {
+        teleport(0, -64, -654, up);
+    }
+    if(virtualCamera.x == -64 && virtualCamera.y == -656 && currentMap == 0) {
+        teleport(1, -48, -930, down);
+    }
+
+    //second town house 2
+    if(virtualCamera.x == -48 && virtualCamera.y == -1024 && currentMap == 1) {
+        teleport(0, -64, -830, up);
+    }
+    if(virtualCamera.x == -64 && virtualCamera.y == -832 && currentMap == 0) {
+        teleport(1, -48, -1026, down);
+    }
+
+    //second town clinic
+    if(virtualCamera.x == -256 && virtualCamera.y == -928 && currentMap == 1) {
+        teleport(0, -320, -654, up);
+    }
+    if(virtualCamera.x == -320 && virtualCamera.y == -656 && currentMap == 0) {
+        teleport(1, -256, -930, down);
+    }
+
+    //second town gym
+    if(virtualCamera.x == -240 && virtualCamera.y == -1024 && currentMap == 1) {
+        teleport(0, -288, -846, up);
+    }
+    if(virtualCamera.x == -288 && virtualCamera.y == -848 && currentMap == 0) {
+        teleport(1, -240, -1026, down);
+    }
 }
 
 void Teleporter::draw(uint32_t tick, Player *player) {

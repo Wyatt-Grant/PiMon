@@ -1,6 +1,6 @@
 #include "engine/Npc.hpp"
 
-Npc::Npc(int32_t x, int32_t y, buffer_t *b, buffer_t *b2, Direction d = down) {
+Npc::Npc(int32_t x, int32_t y, buffer_t *b, buffer_t *b2, Direction d, bool v, int32_t m) {
     avatar = 1;
     position.x = x;
     position.y = y;
@@ -10,6 +10,8 @@ Npc::Npc(int32_t x, int32_t y, buffer_t *b, buffer_t *b2, Direction d = down) {
     buffer = b;
     frontBuffer = b2;
     direction = d;
+    visible = v;
+    map = m;
 }
 
 void Npc::addMessage(Text msg) {
@@ -39,24 +41,26 @@ void Npc::ppSprite(int32_t spriteOffset, int32_t posX, int32_t posY) {
 }
 
 void Npc::draw(uint32_t tick) {
-    int32_t spriteOffset = 0;
-    switch(direction) {
-        case up:
-            spriteOffset += 6;
-            break;
-        case down:
-            spriteOffset += 0;
-            break;
-        case left:
-            spriteOffset += 3;
-            break;
-        case right:
-            spriteOffset += 9;
-            break;
+    if (visible) {
+        int32_t spriteOffset = 0;
+        switch(direction) {
+            case up:
+                spriteOffset += 6;
+                break;
+            case down:
+                spriteOffset += 0;
+                break;
+            case left:
+                spriteOffset += 3;
+                break;
+            case right:
+                spriteOffset += 9;
+                break;
+        }
+
+        int32_t offsetX = virtualCamera.x + position.x;
+        int32_t offsetY = virtualCamera.y + position.y;
+
+        ppSprite(spriteOffset, offsetX, offsetY);
     }
-
-    int32_t offsetX = virtualCamera.x + position.x;
-    int32_t offsetY = virtualCamera.y + position.y;
-
-    ppSprite(spriteOffset, offsetX, offsetY);
 }

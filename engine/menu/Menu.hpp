@@ -46,10 +46,10 @@ class Menu {
         Bag *bag;
         Dex *dex;
         TownMap *townMap;
-        Party *party;
+        Party *partyMenu;
         Settings *settings;
         Stats *stats;
-        
+
         Menu();
         void draw(uint32_t tick);
         void update(uint32_t tick, Message *message);
