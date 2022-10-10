@@ -20,3 +20,5 @@ the rest are available in game
     make
 ```
 You should also have the Pico SDK and PicoSystem SDK's installed
+
+video: https://streamable.com/4dyd86
