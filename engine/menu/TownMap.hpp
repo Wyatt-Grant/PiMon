@@ -5,21 +5,12 @@
 
 #include "types.hpp"
 #include "globals.hpp"
+#include "BaseMenu.hpp"
 
 using namespace picosystem;
 
-class TownMap {       
-    private:
-
+class TownMap : public BaseMenu {
     public:
-        bool closing;
-        bool pressedBack;
-
-        //anim
-        int8_t animX;
-        bool waitForOpenAnimation;
-        bool waitForCloseAnimation;
-
         TownMap();
         void draw(uint32_t tick);
         void update(uint32_t tick);

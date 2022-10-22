@@ -16,6 +16,7 @@ set(PROJECT_SOURCES
     engine/LoadGame.cpp
     engine/NewGame.cpp
     engine/StarterPicker.cpp
+    engine/menu/BaseMenu.cpp
     engine/menu/Menu.cpp
     engine/menu/Dex.cpp
     engine/menu/TownMap.cpp

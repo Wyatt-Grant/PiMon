@@ -5,10 +5,11 @@
 
 #include "types.hpp"
 #include "globals.hpp"
+#include "BaseMenu.hpp"
 
 using namespace picosystem;
 
-class Dex {       
+class Dex : public BaseMenu {       
     private:
         int8_t dexIndex;
         int8_t dexOffset;
@@ -17,14 +18,6 @@ class Dex {
         int16_t heldCounter;
 
     public:
-        bool closing;
-        bool pressedBack;
-
-        //anim
-        int8_t animX;
-        bool waitForOpenAnimation;
-        bool waitForCloseAnimation;
-
         Dex();
         void draw(uint32_t tick);
         void update(uint32_t tick);

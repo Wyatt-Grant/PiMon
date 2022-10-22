@@ -1,47 +1,11 @@
 #include "engine/menu/Party.hpp"
 
-Party::Party() {
-    closing = true;
-    animX = 120;
-    waitForOpenAnimation = false;
-    waitForCloseAnimation = false;
-    pressedBack = false;
+Party::Party() : BaseMenu(56, MainScene != BATTLE ? 92 : 83) {
     menuIndex = 0;
     partySwitch = -1;
 }
 
-void Party::close() {
-    waitForOpenAnimation = false;
-    waitForCloseAnimation = true;
-    pressedBack = true;
-}
-
 void Party::update(uint32_t tick) {
-    closing = false;
-    if (pressed(B)) {
-        waitForOpenAnimation = false;
-        waitForCloseAnimation = true;
-        pressedBack = true;
-    }
-
-    if (waitForOpenAnimation && animX > 64) {
-        animX -= 8;
-        if (animX < 64) animX = 64; 
-    } else if (waitForCloseAnimation && animX < 120) {
-        forceDrawMap = true;
-        animX += 8;
-        if (animX > 120) animX = 120; 
-        if (animX == 120) {
-            waitForCloseAnimation = false;
-            menuIndex = 0;
-        }
-    }
-
-    if (pressedBack) {
-        closing = true;
-        pressedBack = false;
-    }
-
     if (pressed(UP)) {
         if (menuIndex > 0) {
             menuIndex -= 1;
@@ -64,7 +28,8 @@ void Party::update(uint32_t tick) {
 }
 
 void Party::draw(uint32_t tick) {
-    drawWindow(animX, 0, 56, MainScene != BATTLE ? 92 : 83);
+    BaseMenu::update(tick);
+    
     for (int32_t i = 0; i < party.size(); i++) {
         if (i == partySwitch) {
             frect(animX + 2, (i*26) + 2, 52, 27);

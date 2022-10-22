@@ -191,7 +191,7 @@ void Player::update(uint32_t tick, int32_t mapNumber, std::vector<Npc*> npcs, Me
             int32_t wildNum = (((rand() % 12) + 1) * 2) - 1;
 
             isWildBattle = true;
-            enemyParty.clear();
+            freePartyFromMemory(enemyParty);
             enemyParty.push_back({ wildNum, party.at(0).xp, getMaxHp(wildNum, xpToLvl(party.at(0).xp)), 0 });
 
             virtualCamera.x = virtualCamera.x/16*16;

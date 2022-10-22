@@ -621,42 +621,16 @@ const color_t townmap_spritesheet[4928] = {
 buffer_t *TOWNMAP_BUFFER = buffer(56, 86, (void *)townmap_spritesheet);
 buffer_t *townmap_buffer = TOWNMAP_BUFFER;
 
-TownMap::TownMap() {
-    closing = true;
-    animX = 120;
-    waitForOpenAnimation = false;
-    waitForCloseAnimation = false;
-    pressedBack = false;
+TownMap::TownMap() : BaseMenu(56, 86) {
+
 }
 
 void TownMap::update(uint32_t tick) {
-    closing = false;
-    if (pressed(B)) {
-        waitForOpenAnimation = false;
-        waitForCloseAnimation = true;
-        pressedBack = true;
-    }
-
-    if (waitForOpenAnimation && animX > 64) {
-        animX -= 8;
-        if (animX < 64) animX = 64; 
-    } else if (waitForCloseAnimation && animX < 120) {
-        forceDrawMap = true;
-        animX += 8;
-        if (animX > 120) animX = 120; 
-        if (animX == 120) {
-            waitForCloseAnimation = false;
-        }
-    }
-
-    if (pressedBack) {
-        closing = true;
-        pressedBack = false;
-    }
+    BaseMenu::update(tick);
 }
 
 void TownMap::draw(uint32_t tick) {
-    drawWindow(animX, 0, 56, 86);
+    BaseMenu::draw(tick);
 
     spritesheet(townmap_buffer);
     for (int x = 0; x < 7; x++) {

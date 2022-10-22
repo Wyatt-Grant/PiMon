@@ -1,42 +1,14 @@
 #include "engine/menu/Settings.hpp"
 
-Settings::Settings() {
-    closing = true;
+Settings::Settings() : BaseMenu(56, 86) {
     menuIndex = 0;
-    animX = 120;
-    waitForOpenAnimation = false;
-    waitForCloseAnimation = false;
-    pressedBack = false;
     heldRight = false;
     heldLeft = false;
     heldCounter = 0;
 }
 
 void Settings::update(uint32_t tick) {
-    closing = false;
-    if (pressed(B)) {
-        waitForOpenAnimation = false;
-        waitForCloseAnimation = true;
-        pressedBack = true;
-    }
-
-    if (waitForOpenAnimation && animX > 64) {
-        animX -= 8;
-        if (animX < 64) animX = 64; 
-    } else if (waitForCloseAnimation && animX < 120) {
-        forceDrawMap = true;
-        animX += 8;
-        if (animX > 120) animX = 120; 
-        if (animX == 120) {
-            waitForCloseAnimation = false;
-            menuIndex = 0;
-        }
-    }
-
-    if (pressedBack) {
-        closing = true;
-        pressedBack = false;
-    }
+    BaseMenu::update(tick);
 
     if (pressed(UP)) {
         if (menuIndex > 0) {
@@ -142,9 +114,10 @@ void Settings::update(uint32_t tick) {
 }
 
 void Settings::draw(uint32_t tick) {
-    drawWindow(animX, 0, 56, 86);
-    std::string setting;
+    BaseMenu::draw(tick);
 
+    std::string setting;
+    
     text("Theme R", animX+10, 4 + (0 * 16));
     setting = "< "; setting.append(str((int32_t) themeR)); setting.append(" >");
     text(setting, animX+18, 4 + (0 * 16) + 8);

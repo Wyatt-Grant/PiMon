@@ -53,9 +53,9 @@ void init() {
     teleporter = new Teleporter();
     starterPicker = new StarterPicker();
 
-    // party.push_back({ 9, 10, getMaxHp(9, xpToLvl(10)), 0 });
-    // party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
-    // party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
+    party.push_back({ 9, 10, getMaxHp(9, xpToLvl(10)), 0 });
+    party.push_back({ 3, 90, getMaxHp(3, xpToLvl(90)), 0 });
+    party.push_back({ 21, 50000, getMaxHp(21, xpToLvl(500)) - 25, 0 });
 
     //signs
     npcs.push_back(new Npc(84, 116, npc_1_overworld_buffer, npc_1_front_buffer, down, false, 1));
@@ -81,7 +81,7 @@ void init() {
     npcs.at(8)->addMessage({ "Let's have a battle!", 0, []() -> void {
         startBattle();
         isWildBattle = false;
-        enemyParty.clear();
+        freePartyFromMemory(enemyParty);
         enemyParty.push_back({ 9, 20, getMaxHp(9, xpToLvl(20)), 0 });
     }});
 
@@ -90,7 +90,7 @@ void init() {
     npcs.at(9)->addMessage({ "Let's battle!", 0, []() -> void {
         startBattle();
         isWildBattle = false;
-        enemyParty.clear();
+        freePartyFromMemory(enemyParty);
         enemyParty.push_back({ 5, 300, getMaxHp(5, xpToLvl(300)), 0 });
         enemyParty.push_back({ 7, 400, getMaxHp(7, xpToLvl(400)), 0 });
     }});
@@ -100,7 +100,7 @@ void init() {
     npcs.at(10)->addMessage({ "you're going down!", 0, []() -> void {
         startBattle();
         isWildBattle = false;
-        enemyParty.clear();
+        freePartyFromMemory(enemyParty);
         enemyParty.push_back({ 9, 2000, getMaxHp(9, xpToLvl(2000)), 0 });
         enemyParty.push_back({ 11, 2000, getMaxHp(11, xpToLvl(2000)), 0 });
     }});
@@ -110,7 +110,7 @@ void init() {
     npcs.at(11)->addMessage({ "fight time!", 0, []() -> void {
         startBattle();
         isWildBattle = false;
-        enemyParty.clear();
+        freePartyFromMemory(enemyParty);
         enemyParty.push_back({ 13, 10000, getMaxHp(13, xpToLvl(10000)), 0 });
         enemyParty.push_back({ 15, 10000, getMaxHp(15, xpToLvl(10000)), 0 });
     }});
@@ -120,7 +120,7 @@ void init() {
     npcs.at(12)->addMessage({ "you look weak!", 0, []() -> void {
         startBattle();
         isWildBattle = false;
-        enemyParty.clear();
+        freePartyFromMemory(enemyParty);
         enemyParty.push_back({ 17, 10000, getMaxHp(17, xpToLvl(10000)), 0 });
         enemyParty.push_back({ 19, 10000, getMaxHp(19, xpToLvl(10000)), 0 });
         enemyParty.push_back({ 21, 10000, getMaxHp(21, xpToLvl(10000)), 0 });
@@ -166,7 +166,7 @@ void init() {
     npcs.at(21)->addMessage({ "I'm the dojo leader!\nlet's fight!", 0, []() -> void {
         startBattle();
         isWildBattle = false;
-        enemyParty.clear();
+        freePartyFromMemory(enemyParty);
         enemyParty.push_back({ 23, 10000, getMaxHp(23, xpToLvl(15000)), 0 });
         enemyParty.push_back({ 3, 10000, getMaxHp(3, xpToLvl(15000)), 0 });
         enemyParty.push_back({ 13, 10000, getMaxHp(13, xpToLvl(15000)), 0 });

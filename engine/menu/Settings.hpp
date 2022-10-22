@@ -5,25 +5,18 @@
 
 #include "types.hpp"
 #include "globals.hpp"
+#include "BaseMenu.hpp"
 
 using namespace picosystem;
 
-class Settings {       
+class Settings : public BaseMenu {
     private:
         int8_t menuIndex;
+        int8_t heldCounter;
         bool heldRight;
         bool heldLeft;
-        int16_t heldCounter;
 
     public:
-        bool closing;
-        bool pressedBack;
-
-        //anim
-        int8_t animX;
-        bool waitForOpenAnimation;
-        bool waitForCloseAnimation;
-
         Settings();
         void draw(uint32_t tick);
         void update(uint32_t tick);

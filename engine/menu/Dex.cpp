@@ -1,11 +1,6 @@
 #include "engine/menu/Dex.hpp"
 
-Dex::Dex() {
-    closing = true;
-    animX = 120;
-    waitForOpenAnimation = false;
-    waitForCloseAnimation = false;
-    pressedBack = false;
+Dex::Dex() : BaseMenu(60, 86) {
     dexIndex = 0;
     dexOffset = 0;
     heldUp = false;
@@ -14,31 +9,7 @@ Dex::Dex() {
 }
 
 void Dex::update(uint32_t tick) {
-    closing = false;
-    if (pressed(B)) {
-        waitForOpenAnimation = false;
-        waitForCloseAnimation = true;
-        pressedBack = true;
-    }
-
-    if (waitForOpenAnimation && animX > 60) {
-        animX -= 8;
-        if (animX < 60) animX = 60; 
-    } else if (waitForCloseAnimation && animX < 120) {
-        forceDrawMap = true;
-        animX += 8;
-        if (animX > 120) animX = 120; 
-        if (animX == 120) {
-            waitForCloseAnimation = false;
-            dexIndex = 0;
-            dexOffset = 0;
-        }
-    }
-
-    if (pressedBack) {
-        closing = true;
-        pressedBack = false;
-    }
+    BaseMenu::update(tick);
 
     if (pressed(UP) || heldUp) {
         if (dexIndex > 0) {
@@ -77,7 +48,7 @@ void Dex::update(uint32_t tick) {
 }
 
 void Dex::draw(uint32_t tick) {
-    drawWindow(animX, 0, 60, 86);
+    BaseMenu::draw(tick);
 
     setPimonBuffer(dexOffset+dexIndex + 1);
     if (caughtPimon[dexOffset+dexIndex]) {

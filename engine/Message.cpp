@@ -12,7 +12,7 @@ Message::Message() {
 }
 
 void Message::showMessage(std::string msg) {
-    messages.clear();
+    freeMessagesFromMemory(messages);
     msg = std::regex_replace(msg, std::regex("PLAYER"), playerName);
     msg = std::regex_replace(msg, std::regex("RIVAL"), rivalName);
     messages.push_back({ msg, 0, []() -> void { return; } });
@@ -31,7 +31,7 @@ void Message::showMessage(std::string msg) {
 }
 
 void Message::showMessages(std::vector<Text> msgs) {
-    messages.clear();
+    freeMessagesFromMemory(messages);
     for (auto &m : msgs) {
         m.text = std::regex_replace(m.text, std::regex("PLAYER"), playerName);
         m.text = std::regex_replace(m.text, std::regex("RIVAL"), rivalName);

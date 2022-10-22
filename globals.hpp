@@ -145,6 +145,8 @@ extern const int16_t town1_inside_below[160][160];
 extern buffer_t *town_1_inside_tileset_buffer;
 
 // helpers
+void freeMessagesFromMemory(std::vector<Text> &myVec);
+void freePartyFromMemory(std::vector<trainerPimon> &myVec);
 void drawWindow(uint32_t x, uint32_t y, uint32_t w, uint32_t h);
 void playTick();
 void ppSprite(buffer_t *buffer, int32_t spriteOffset, int32_t posX, int32_t posY);

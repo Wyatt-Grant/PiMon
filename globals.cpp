@@ -12,8 +12,8 @@
 
 // stuff needed to save the game
 Point virtualCamera = {0, 0};
-std::string playerName = "";
-std::string rivalName = "";
+std::string playerName = "Wyatt";
+std::string rivalName = "Bob";
 int32_t playerAvatar = 1;
 int32_t playerStarter = 1; // just for title screen
 int32_t cashMoney = 0;
@@ -87,6 +87,18 @@ int32_t xpToLvl(int32_t _xp) {
 
 int32_t lvlToXp(int32_t _lvl) {
     return (int32_t) pow(2, _lvl);
+}
+
+void freeMessagesFromMemory(std::vector<Text> &myVec) {
+     myVec.clear();
+     std::vector<Text> vert;
+     myVec.swap(vert);
+}
+
+void freePartyFromMemory(std::vector<trainerPimon> &myVec) {
+     myVec.clear();
+     std::vector<trainerPimon> vert;
+     myVec.swap(vert);
 }
 
 // pixel perfect spite

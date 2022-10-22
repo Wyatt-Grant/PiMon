@@ -19,7 +19,7 @@ void StarterPicker::update(uint32_t tick, std::vector<Npc*> npcs) {
         int32_t chosen = (2*(dexOffset+dexIndex)) + 1;
         party.push_back({ chosen, 2, getMaxHp(chosen, xpToLvl(2)), 0 });
         playerStarter = chosen;
-        npcs.at(17)->messages.clear();
+        freeMessagesFromMemory(npcs.at(17)->messages);
         npcs.at(17)->addMessage({ "Hey PLAYER\nI hope you enjoy\nyour PiMon!", 0, []() -> void { return; } });
         caughtPimon[chosen-1] = true;
     }
